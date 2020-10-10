@@ -94,7 +94,7 @@ void ROS_Init()
 void ROS_Update()
 {
 	updateTime();
-	publishInputPin();
+	publishDigitalInput();
 	prev_update_time = t;
 }
 
@@ -246,7 +246,7 @@ void HSPMCallback(const utmrbc_msgs::HSPM &hspm_msg)
 /*******************************************************************************
 * Publish functions
 *******************************************************************************/
-void publishInputPin()
+void publishDigitalInput()
 {
 	int pin;
 	bool signal;

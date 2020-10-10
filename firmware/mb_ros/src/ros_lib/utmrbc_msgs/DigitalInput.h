@@ -1,15 +1,15 @@
-#ifndef _ROS_utmrbc_msgs_InputPin_h
-#define _ROS_utmrbc_msgs_InputPin_h
+#ifndef _ROS_utmrbc_msgs_DigitalInput_h
+#define _ROS_utmrbc_msgs_DigitalInput_h
 
 #include <stdint.h>
 #include <string.h>
 #include <stdlib.h>
-#include <ros_lib/ros/msg.h>
+#include "ros_lib/ros/msg.h"
 
 namespace utmrbc_msgs
 {
 
-  class InputPin : public ros::Msg
+  class DigitalInput : public ros::Msg
   {
     public:
       typedef int32_t _pin_type;
@@ -17,7 +17,7 @@ namespace utmrbc_msgs
       typedef bool _signal_type;
       _signal_type signal;
 
-    InputPin():
+    DigitalInput():
       pin(0),
       signal(0)
     {
@@ -71,7 +71,7 @@ namespace utmrbc_msgs
      return offset;
     }
 
-    const char * getType(){ return "utmrbc_msgs/InputPin"; };
+    const char * getType(){ return "utmrbc_msgs/DigitalInput"; };
     const char * getMD5(){ return "359ffdef4df401a3c881b8043c9e8293"; };
 
   };

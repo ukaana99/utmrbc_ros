@@ -12,7 +12,8 @@
 
 #include <ros_lib/nav_msgs/Odometry.h>
 #include <ros_lib/utmrbc_msgs/LED.h>
-#include <ros_lib/utmrbc_msgs/InputPin.h>
+#include <ros_lib/utmrbc_msgs/DigitalInput.h>
+#include <ros_lib/utmrbc_msgs/AnalogInput.h>
 #include <ros_lib/utmrbc_msgs/BDC.h>
 #include <ros_lib/utmrbc_msgs/HSPM.h>
 
@@ -42,7 +43,7 @@ void ROS_Init();
 void ROS_Update();
 
 // Publisher function prototypes
-void publishInputPin();
+void publishDigitalInput();
 
 // Callback function prototypes
 void LEDCallback(const utmrbc_msgs::LED &led_msg);

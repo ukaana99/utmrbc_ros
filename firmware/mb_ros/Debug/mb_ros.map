@@ -173,7 +173,7 @@ Discarded input sections
                 0x0000000000000000      0x148 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.o
  .debug_ranges  0x0000000000000000      0x138 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.o
  .debug_line    0x0000000000000000      0x55c Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.o
- .debug_str     0x0000000000000000      0x891 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.o
+ .debug_str     0x0000000000000000      0x88c Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.o
  .debug_frame   0x0000000000000000      0x5ec Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.o
  .ARM.attributes
@@ -234,7 +234,7 @@ Discarded input sections
                 0x0000000000000000       0x48 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.o
  .debug_ranges  0x0000000000000000       0x38 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.o
  .debug_line    0x0000000000000000      0x21e Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.o
- .debug_str     0x0000000000000000      0x2d8 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.o
+ .debug_str     0x0000000000000000      0x2d3 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.o
  .debug_frame   0x0000000000000000       0xe8 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.o
  .ARM.attributes
@@ -286,7 +286,7 @@ Discarded input sections
                 0x0000000000000000       0xb0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.o
  .debug_ranges  0x0000000000000000       0xa0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.o
  .debug_line    0x0000000000000000      0x3dd Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.o
- .debug_str     0x0000000000000000      0x73d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.o
+ .debug_str     0x0000000000000000      0x738 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.o
  .debug_frame   0x0000000000000000      0x2ec Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.o
  .ARM.attributes
@@ -310,7 +310,7 @@ Discarded input sections
                 0x0000000000000000       0x40 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.o
  .debug_ranges  0x0000000000000000       0x30 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.o
  .debug_line    0x0000000000000000      0xe5a Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.o
- .debug_str     0x0000000000000000      0x54d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.o
+ .debug_str     0x0000000000000000      0x548 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.o
  .debug_frame   0x0000000000000000       0xe4 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.o
  .ARM.attributes
@@ -328,7 +328,7 @@ Discarded input sections
                 0x0000000000000000       0x28 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.o
  .debug_ranges  0x0000000000000000       0x18 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.o
  .debug_line    0x0000000000000000      0x311 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.o
- .debug_str     0x0000000000000000      0x45f Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.o
+ .debug_str     0x0000000000000000      0x45a Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.o
  .debug_frame   0x0000000000000000       0x60 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.o
  .ARM.attributes
@@ -346,7 +346,7 @@ Discarded input sections
                 0x0000000000000000       0x28 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_tdes.o
  .debug_ranges  0x0000000000000000       0x18 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_tdes.o
  .debug_line    0x0000000000000000      0x38a Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_tdes.o
- .debug_str     0x0000000000000000      0x465 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_tdes.o
+ .debug_str     0x0000000000000000      0x460 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_tdes.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_tdes.o
  .debug_frame   0x0000000000000000       0x60 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_tdes.o
  .ARM.attributes
@@ -393,7 +393,7 @@ Discarded input sections
                 0x0000000000000000       0xa0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.o
  .debug_ranges  0x0000000000000000       0x90 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.o
  .debug_line    0x0000000000000000      0x351 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.o
- .debug_str     0x0000000000000000      0x4e0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.o
+ .debug_str     0x0000000000000000      0x4db Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.o
  .debug_frame   0x0000000000000000      0x2ac Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.o
  .ARM.attributes
@@ -417,7 +417,7 @@ Discarded input sections
                 0x0000000000000000       0x40 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.o
  .debug_ranges  0x0000000000000000       0x30 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.o
  .debug_line    0x0000000000000000      0x204 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.o
- .debug_str     0x0000000000000000      0x2cd Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.o
+ .debug_str     0x0000000000000000      0x2c8 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.o
  .debug_frame   0x0000000000000000       0xc8 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.o
  .ARM.attributes
@@ -461,7 +461,7 @@ Discarded input sections
                 0x0000000000000000       0x90 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
  .debug_ranges  0x0000000000000000       0x80 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
  .debug_line    0x0000000000000000      0x337 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
- .debug_str     0x0000000000000000      0x566 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
+ .debug_str     0x0000000000000000      0x561 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
  .debug_frame   0x0000000000000000      0x258 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.o
  .ARM.attributes
@@ -512,7 +512,7 @@ Discarded input sections
                 0x0000000000000000       0xb0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
  .debug_ranges  0x0000000000000000       0xa0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
  .debug_line    0x0000000000000000      0x429 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
- .debug_str     0x0000000000000000      0x5cf Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
+ .debug_str     0x0000000000000000      0x5ca Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
  .debug_frame   0x0000000000000000      0x308 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.o
  .ARM.attributes
@@ -605,7 +605,7 @@ Discarded input sections
                 0x0000000000000000      0x118 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
  .debug_ranges  0x0000000000000000      0x108 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
  .debug_line    0x0000000000000000      0x4ab Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
- .debug_str     0x0000000000000000      0x64b Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
+ .debug_str     0x0000000000000000      0x646 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
  .debug_frame   0x0000000000000000      0x494 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.o
  .ARM.attributes
@@ -657,7 +657,7 @@ Discarded input sections
                 0x0000000000000000       0xb0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
  .debug_ranges  0x0000000000000000       0xa0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
  .debug_line    0x0000000000000000      0x487 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
- .debug_str     0x0000000000000000      0x817 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
+ .debug_str     0x0000000000000000      0x812 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
  .debug_frame   0x0000000000000000      0x300 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.o
  .ARM.attributes
@@ -730,7 +730,7 @@ Discarded input sections
                 0x0000000000000000       0xa8 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash.o
  .debug_ranges  0x0000000000000000       0x98 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash.o
  .debug_line    0x0000000000000000      0x37c Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash.o
- .debug_str     0x0000000000000000      0x4e8 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash.o
+ .debug_str     0x0000000000000000      0x4e3 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash.o
  .debug_frame   0x0000000000000000      0x2bc Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash.o
  .ARM.attributes
@@ -748,7 +748,7 @@ Discarded input sections
                 0x0000000000000000       0x28 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_md5.o
  .debug_ranges  0x0000000000000000       0x18 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_md5.o
  .debug_line    0x0000000000000000      0x379 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_md5.o
- .debug_str     0x0000000000000000      0x37f Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_md5.o
+ .debug_str     0x0000000000000000      0x37a Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_md5.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_md5.o
  .debug_frame   0x0000000000000000       0x60 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_md5.o
  .ARM.attributes
@@ -766,7 +766,7 @@ Discarded input sections
                 0x0000000000000000       0x28 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_sha1.o
  .debug_ranges  0x0000000000000000       0x18 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_sha1.o
  .debug_line    0x0000000000000000      0x398 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_sha1.o
- .debug_str     0x0000000000000000      0x384 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_sha1.o
+ .debug_str     0x0000000000000000      0x37f Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_sha1.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_sha1.o
  .debug_frame   0x0000000000000000       0x60 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_sha1.o
  .ARM.attributes
@@ -839,7 +839,7 @@ Discarded input sections
                 0x0000000000000000       0x48 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.o
  .debug_ranges  0x0000000000000000       0x38 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.o
  .debug_line    0x0000000000000000      0x210 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.o
- .debug_str     0x0000000000000000      0x2f9 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.o
+ .debug_str     0x0000000000000000      0x2f4 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.o
  .debug_frame   0x0000000000000000       0xf0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.o
  .ARM.attributes
@@ -877,7 +877,7 @@ Discarded input sections
                 0x0000000000000000       0x78 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.o
  .debug_ranges  0x0000000000000000       0x68 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.o
  .debug_line    0x0000000000000000      0x2b8 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.o
- .debug_str     0x0000000000000000      0x40a Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.o
+ .debug_str     0x0000000000000000      0x405 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.o
  .debug_frame   0x0000000000000000      0x1dc Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.o
  .ARM.attributes
@@ -989,7 +989,7 @@ Discarded input sections
                 0x0000000000000000       0x58 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.o
  .debug_ranges  0x0000000000000000       0x48 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.o
  .debug_line    0x0000000000000000      0x23e Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.o
- .debug_str     0x0000000000000000      0x306 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.o
+ .debug_str     0x0000000000000000      0x301 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.o
  .debug_frame   0x0000000000000000      0x13c Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.o
  .ARM.attributes
@@ -1117,7 +1117,7 @@ Discarded input sections
                 0x0000000000000000      0x1e0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
  .debug_ranges  0x0000000000000000      0x1d0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
  .debug_line    0x0000000000000000      0x824 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
- .debug_str     0x0000000000000000      0xbd5 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
+ .debug_str     0x0000000000000000      0xbd0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
  .debug_frame   0x0000000000000000      0x8b0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.o
  .ARM.attributes
@@ -1191,7 +1191,7 @@ Discarded input sections
                 0x0000000000000000      0x108 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.o
  .debug_ranges  0x0000000000000000       0xf8 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.o
  .debug_line    0x0000000000000000      0x438 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.o
- .debug_str     0x0000000000000000      0x6cd Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.o
+ .debug_str     0x0000000000000000      0x6c8 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.o
  .debug_frame   0x0000000000000000      0x48c Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.o
  .ARM.attributes
@@ -1253,7 +1253,7 @@ Discarded input sections
                 0x0000000000000000       0xe0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
  .debug_ranges  0x0000000000000000       0xd0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
  .debug_line    0x0000000000000000      0x46f Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
- .debug_str     0x0000000000000000      0x717 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
+ .debug_str     0x0000000000000000      0x712 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
  .debug_frame   0x0000000000000000      0x3f4 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.o
  .ARM.attributes
@@ -1279,7 +1279,7 @@ Discarded input sections
                 0x0000000000000000       0x48 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
  .debug_ranges  0x0000000000000000       0x38 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
  .debug_line    0x0000000000000000      0x218 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
- .debug_str     0x0000000000000000      0x381 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
+ .debug_str     0x0000000000000000      0x37c Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
  .debug_frame   0x0000000000000000       0xf4 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.o
  .ARM.attributes
@@ -1509,7 +1509,7 @@ Discarded input sections
                 0x0000000000000000       0x58 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
  .debug_ranges  0x0000000000000000       0x48 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
  .debug_line    0x0000000000000000      0x23b Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
- .debug_str     0x0000000000000000      0x304 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
+ .debug_str     0x0000000000000000      0x2ff Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
  .comment       0x0000000000000000       0x7d Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
  .debug_frame   0x0000000000000000      0x134 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.o
  .ARM.attributes
@@ -1527,7 +1527,7 @@ Discarded input sections
                 0x0000000000000000       0x30 src/ABT/ABT.o
  .debug_ranges  0x0000000000000000       0x20 src/ABT/ABT.o
  .debug_line    0x0000000000000000      0x3d5 src/ABT/ABT.o
- .debug_str     0x0000000000000000     0x1358 src/ABT/ABT.o
+ .debug_str     0x0000000000000000     0x1353 src/ABT/ABT.o
  .comment       0x0000000000000000       0x7d src/ABT/ABT.o
  .debug_frame   0x0000000000000000       0x90 src/ABT/ABT.o
  .ARM.attributes
@@ -1546,7 +1546,7 @@ Discarded input sections
                 0x0000000000000000       0x28 src/ADC/adc.o
  .debug_ranges  0x0000000000000000       0x18 src/ADC/adc.o
  .debug_line    0x0000000000000000      0x3ef src/ADC/adc.o
- .debug_str     0x0000000000000000     0x1a22 src/ADC/adc.o
+ .debug_str     0x0000000000000000     0x1a1d src/ADC/adc.o
  .comment       0x0000000000000000       0x7d src/ADC/adc.o
  .debug_frame   0x0000000000000000       0x5c src/ADC/adc.o
  .ARM.attributes
@@ -1661,7 +1661,7 @@ Discarded input sections
                 0x0000000000000000       0xa8 src/BIOS/uartdma.o
  .debug_ranges  0x0000000000000000       0x98 src/BIOS/uartdma.o
  .debug_line    0x0000000000000000      0x60b src/BIOS/uartdma.o
- .debug_str     0x0000000000000000     0x177c src/BIOS/uartdma.o
+ .debug_str     0x0000000000000000     0x1777 src/BIOS/uartdma.o
  .comment       0x0000000000000000       0x7d src/BIOS/uartdma.o
  .debug_frame   0x0000000000000000      0x298 src/BIOS/uartdma.o
  .ARM.attributes
@@ -1676,7 +1676,7 @@ Discarded input sections
                 0x0000000000000000       0x20 src/BIOS/utils.o
  .debug_ranges  0x0000000000000000       0x10 src/BIOS/utils.o
  .debug_line    0x0000000000000000      0x3a6 src/BIOS/utils.o
- .debug_str     0x0000000000000000      0xf75 src/BIOS/utils.o
+ .debug_str     0x0000000000000000      0xf70 src/BIOS/utils.o
  .comment       0x0000000000000000       0x7d src/BIOS/utils.o
  .debug_frame   0x0000000000000000       0x38 src/BIOS/utils.o
  .ARM.attributes
@@ -1711,7 +1711,7 @@ Discarded input sections
                 0x0000000000000000       0x58 src/I2C/i2c.o
  .debug_ranges  0x0000000000000000       0x48 src/I2C/i2c.o
  .debug_line    0x0000000000000000      0x53d src/I2C/i2c.o
- .debug_str     0x0000000000000000     0x17f1 src/I2C/i2c.o
+ .debug_str     0x0000000000000000     0x17ec src/I2C/i2c.o
  .comment       0x0000000000000000       0x7d src/I2C/i2c.o
  .debug_frame   0x0000000000000000      0x15c src/I2C/i2c.o
  .ARM.attributes
@@ -1749,7 +1749,7 @@ Discarded input sections
                 0x0000000000000000       0x38 src/IMU_SPI/IMU_SPI.o
  .debug_ranges  0x0000000000000000       0x28 src/IMU_SPI/IMU_SPI.o
  .debug_line    0x0000000000000000      0x714 src/IMU_SPI/IMU_SPI.o
- .debug_str     0x0000000000000000     0x1480 src/IMU_SPI/IMU_SPI.o
+ .debug_str     0x0000000000000000     0x147b src/IMU_SPI/IMU_SPI.o
  .comment       0x0000000000000000       0x7d src/IMU_SPI/IMU_SPI.o
  .debug_frame   0x0000000000000000       0xa8 src/IMU_SPI/IMU_SPI.o
  .ARM.attributes
@@ -1775,7 +1775,7 @@ Discarded input sections
                 0x0000000000000000       0x48 src/KF/KF.o
  .debug_ranges  0x0000000000000000       0x38 src/KF/KF.o
  .debug_line    0x0000000000000000      0x3f9 src/KF/KF.o
- .debug_str     0x0000000000000000     0x13f6 src/KF/KF.o
+ .debug_str     0x0000000000000000     0x13f1 src/KF/KF.o
  .comment       0x0000000000000000       0x7d src/KF/KF.o
  .debug_frame   0x0000000000000000      0x104 src/KF/KF.o
  .ARM.attributes
@@ -1796,7 +1796,7 @@ Discarded input sections
                 0x0000000000000000       0x38 src/MODN/MODN.o
  .debug_ranges  0x0000000000000000       0x28 src/MODN/MODN.o
  .debug_line    0x0000000000000000      0x1f0 src/MODN/MODN.o
- .debug_str     0x0000000000000000      0x6e1 src/MODN/MODN.o
+ .debug_str     0x0000000000000000      0x6dc src/MODN/MODN.o
  .comment       0x0000000000000000       0x7d src/MODN/MODN.o
  .debug_frame   0x0000000000000000       0xb8 src/MODN/MODN.o
  .ARM.attributes
@@ -1823,7 +1823,7 @@ Discarded input sections
                 0x0000000000000000       0x50 src/PID/PID.o
  .debug_ranges  0x0000000000000000       0x40 src/PID/PID.o
  .debug_line    0x0000000000000000      0x449 src/PID/PID.o
- .debug_str     0x0000000000000000     0x136b src/PID/PID.o
+ .debug_str     0x0000000000000000     0x1366 src/PID/PID.o
  .comment       0x0000000000000000       0x7d src/PID/PID.o
  .debug_frame   0x0000000000000000      0x128 src/PID/PID.o
  .ARM.attributes
@@ -1861,7 +1861,7 @@ Discarded input sections
                 0x0000000000000000       0x88 src/RNS_interface.V2/RNS_interface.o
  .debug_ranges  0x0000000000000000       0x78 src/RNS_interface.V2/RNS_interface.o
  .debug_line    0x0000000000000000      0x5b5 src/RNS_interface.V2/RNS_interface.o
- .debug_str     0x0000000000000000     0x1ea5 src/RNS_interface.V2/RNS_interface.o
+ .debug_str     0x0000000000000000     0x1ea0 src/RNS_interface.V2/RNS_interface.o
  .comment       0x0000000000000000       0x7d src/RNS_interface.V2/RNS_interface.o
  .debug_frame   0x0000000000000000      0x248 src/RNS_interface.V2/RNS_interface.o
  .ARM.attributes
@@ -1902,7 +1902,7 @@ Discarded input sections
                 0x0000000000000000       0x38 src/SERVO/servo.o
  .debug_ranges  0x0000000000000000       0x28 src/SERVO/servo.o
  .debug_line    0x0000000000000000      0x85e src/SERVO/servo.o
- .debug_str     0x0000000000000000     0x1516 src/SERVO/servo.o
+ .debug_str     0x0000000000000000     0x1511 src/SERVO/servo.o
  .comment       0x0000000000000000       0x7d src/SERVO/servo.o
  .debug_frame   0x0000000000000000       0xa8 src/SERVO/servo.o
  .ARM.attributes
@@ -2146,6 +2146,7 @@ Discarded input sections
                 0x0000000000000000        0x1 src/main.o
  .rodata._ZN3rosL18SERIAL_MSG_TIMEOUTE
                 0x0000000000000000        0x1 src/main.o
+ .bss.counter   0x0000000000000000        0x4 src/main.o
  .bss._ZL5tTime
                 0x0000000000000000       0x28 src/main.o
  .text._Z6rosNowv
@@ -2167,7 +2168,7 @@ Discarded input sections
                 0x0000000000000000       0x38 src/ros_lib/duration.o
  .debug_ranges  0x0000000000000000       0x28 src/ros_lib/duration.o
  .debug_line    0x0000000000000000      0x378 src/ros_lib/duration.o
- .debug_str     0x0000000000000000      0x7fc src/ros_lib/duration.o
+ .debug_str     0x0000000000000000      0x7f7 src/ros_lib/duration.o
  .comment       0x0000000000000000       0x7d src/ros_lib/duration.o
  .debug_frame   0x0000000000000000       0xa8 src/ros_lib/duration.o
  .ARM.attributes
@@ -3036,23 +3037,23 @@ LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-
  .text._ZN11utmrbc_msgs3LED6getMD5Ev
                 0x0000000008008ce4       0x1c src/main.o
                 0x0000000008008ce4                utmrbc_msgs::LED::getMD5()
- .text._ZN11utmrbc_msgs8InputPinC2Ev
+ .text._ZN11utmrbc_msgs12DigitalInputC2Ev
                 0x0000000008008d00       0x30 src/main.o
-                0x0000000008008d00                utmrbc_msgs::InputPin::InputPin()
-                0x0000000008008d00                utmrbc_msgs::InputPin::InputPin()
- .text._ZNK11utmrbc_msgs8InputPin9serializeEPh
+                0x0000000008008d00                utmrbc_msgs::DigitalInput::DigitalInput()
+                0x0000000008008d00                utmrbc_msgs::DigitalInput::DigitalInput()
+ .text._ZNK11utmrbc_msgs12DigitalInput9serializeEPh
                 0x0000000008008d30       0x7a src/main.o
-                0x0000000008008d30                utmrbc_msgs::InputPin::serialize(unsigned char*) const
- .text._ZN11utmrbc_msgs8InputPin11deserializeEPh
+                0x0000000008008d30                utmrbc_msgs::DigitalInput::serialize(unsigned char*) const
+ .text._ZN11utmrbc_msgs12DigitalInput11deserializeEPh
                 0x0000000008008daa       0x90 src/main.o
-                0x0000000008008daa                utmrbc_msgs::InputPin::deserialize(unsigned char*)
+                0x0000000008008daa                utmrbc_msgs::DigitalInput::deserialize(unsigned char*)
  *fill*         0x0000000008008e3a        0x2 
- .text._ZN11utmrbc_msgs8InputPin7getTypeEv
+ .text._ZN11utmrbc_msgs12DigitalInput7getTypeEv
                 0x0000000008008e3c       0x1c src/main.o
-                0x0000000008008e3c                utmrbc_msgs::InputPin::getType()
- .text._ZN11utmrbc_msgs8InputPin6getMD5Ev
+                0x0000000008008e3c                utmrbc_msgs::DigitalInput::getType()
+ .text._ZN11utmrbc_msgs12DigitalInput6getMD5Ev
                 0x0000000008008e58       0x1c src/main.o
-                0x0000000008008e58                utmrbc_msgs::InputPin::getMD5()
+                0x0000000008008e58                utmrbc_msgs::DigitalInput::getMD5()
  .text._ZN11utmrbc_msgs3BDCC2Ev
                 0x0000000008008e74       0x30 src/main.o
                 0x0000000008008e74                utmrbc_msgs::BDC::BDC()
@@ -3106,9 +3107,9 @@ LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-
  .text._Z12HSPMCallbackRKN11utmrbc_msgs4HSPME
                 0x0000000008009484      0x21c src/main.o
                 0x0000000008009484                HSPMCallback(utmrbc_msgs::HSPM const&)
- .text._Z15publishInputPinv
+ .text._Z19publishDigitalInputv
                 0x00000000080096a0      0x33c src/main.o
-                0x00000000080096a0                publishInputPin()
+                0x00000000080096a0                publishDigitalInput()
  .text._Z10updateTimev
                 0x00000000080099dc       0x3c src/main.o
                 0x00000000080099dc                updateTime()
@@ -3429,97 +3430,97 @@ LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-
 .iplt           0x000000000800b25c        0x0
  .iplt          0x000000000800b25c        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
 
-.rodata         0x000000000800b25c      0x410
+.rodata         0x000000000800b25c      0x418
                 0x000000000800b25c                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x000000000800b25c      0x27b src/main.o
+ .rodata        0x000000000800b25c      0x281 src/main.o
  *(.rodata*)
- *fill*         0x000000000800b4d7        0x1 
+ *fill*         0x000000000800b4dd        0x3 
  .rodata._ZN14rosserial_msgsL12REQUESTPARAME
-                0x000000000800b4d8       0x1c src/main.o
+                0x000000000800b4e0       0x1c src/main.o
  .rodata._ZTVN3ros10SubscriberIN11utmrbc_msgs4HSPMEvEE
-                0x000000000800b4f4       0x18 src/main.o
-                0x000000000800b4f4                vtable for ros::Subscriber<utmrbc_msgs::HSPM, void>
+                0x000000000800b4fc       0x18 src/main.o
+                0x000000000800b4fc                vtable for ros::Subscriber<utmrbc_msgs::HSPM, void>
  .rodata._ZTVN3ros10SubscriberIN11utmrbc_msgs3BDCEvEE
-                0x000000000800b50c       0x18 src/main.o
-                0x000000000800b50c                vtable for ros::Subscriber<utmrbc_msgs::BDC, void>
+                0x000000000800b514       0x18 src/main.o
+                0x000000000800b514                vtable for ros::Subscriber<utmrbc_msgs::BDC, void>
  .rodata._ZTVN3ros10SubscriberIN11utmrbc_msgs3LEDEvEE
-                0x000000000800b524       0x18 src/main.o
-                0x000000000800b524                vtable for ros::Subscriber<utmrbc_msgs::LED, void>
+                0x000000000800b52c       0x18 src/main.o
+                0x000000000800b52c                vtable for ros::Subscriber<utmrbc_msgs::LED, void>
  .rodata._ZTVN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi1024ELi1024EEE
-                0x000000000800b53c       0x14 src/main.o
-                0x000000000800b53c                vtable for ros::NodeHandle_<STM32Hardware, 25, 25, 1024, 1024>
+                0x000000000800b544       0x14 src/main.o
+                0x000000000800b544                vtable for ros::NodeHandle_<STM32Hardware, 25, 25, 1024, 1024>
  .rodata._ZTVN11utmrbc_msgs4HSPME
-                0x000000000800b550       0x18 src/main.o
-                0x000000000800b550                vtable for utmrbc_msgs::HSPM
+                0x000000000800b558       0x18 src/main.o
+                0x000000000800b558                vtable for utmrbc_msgs::HSPM
  .rodata._ZTVN11utmrbc_msgs3BDCE
-                0x000000000800b568       0x18 src/main.o
-                0x000000000800b568                vtable for utmrbc_msgs::BDC
- .rodata._ZTVN11utmrbc_msgs8InputPinE
-                0x000000000800b580       0x18 src/main.o
-                0x000000000800b580                vtable for utmrbc_msgs::InputPin
+                0x000000000800b570       0x18 src/main.o
+                0x000000000800b570                vtable for utmrbc_msgs::BDC
+ .rodata._ZTVN11utmrbc_msgs12DigitalInputE
+                0x000000000800b588       0x18 src/main.o
+                0x000000000800b588                vtable for utmrbc_msgs::DigitalInput
  .rodata._ZTVN11utmrbc_msgs3LEDE
-                0x000000000800b598       0x18 src/main.o
-                0x000000000800b598                vtable for utmrbc_msgs::LED
+                0x000000000800b5a0       0x18 src/main.o
+                0x000000000800b5a0                vtable for utmrbc_msgs::LED
  .rodata._ZTVN8std_msgs6StringE
-                0x000000000800b5b0       0x18 src/main.o
-                0x000000000800b5b0                vtable for std_msgs::String
+                0x000000000800b5b8       0x18 src/main.o
+                0x000000000800b5b8                vtable for std_msgs::String
  .rodata._ZTVN3ros11Subscriber_E
-                0x000000000800b5c8       0x18 src/main.o
-                0x000000000800b5c8                vtable for ros::Subscriber_
+                0x000000000800b5d0       0x18 src/main.o
+                0x000000000800b5d0                vtable for ros::Subscriber_
  .rodata._ZTVN3ros15NodeHandleBase_E
-                0x000000000800b5e0       0x14 src/main.o
-                0x000000000800b5e0                vtable for ros::NodeHandleBase_
+                0x000000000800b5e8       0x14 src/main.o
+                0x000000000800b5e8                vtable for ros::NodeHandleBase_
  .rodata._ZTVN8std_msgs4TimeE
-                0x000000000800b5f4       0x18 src/main.o
-                0x000000000800b5f4                vtable for std_msgs::Time
+                0x000000000800b5fc       0x18 src/main.o
+                0x000000000800b5fc                vtable for std_msgs::Time
  .rodata._ZTVN14rosserial_msgs9TopicInfoE
-                0x000000000800b60c       0x18 src/main.o
-                0x000000000800b60c                vtable for rosserial_msgs::TopicInfo
+                0x000000000800b614       0x18 src/main.o
+                0x000000000800b614                vtable for rosserial_msgs::TopicInfo
  .rodata._ZTVN14rosserial_msgs20RequestParamResponseE
-                0x000000000800b624       0x18 src/main.o
-                0x000000000800b624                vtable for rosserial_msgs::RequestParamResponse
+                0x000000000800b62c       0x18 src/main.o
+                0x000000000800b62c                vtable for rosserial_msgs::RequestParamResponse
  .rodata._ZTVN14rosserial_msgs3LogE
-                0x000000000800b63c       0x18 src/main.o
-                0x000000000800b63c                vtable for rosserial_msgs::Log
+                0x000000000800b644       0x18 src/main.o
+                0x000000000800b644                vtable for rosserial_msgs::Log
  .rodata._ZTVN3ros3MsgE
-                0x000000000800b654       0x18 src/main.o
-                0x000000000800b654                vtable for ros::Msg
-                0x000000000800b66c                . = ALIGN (0x4)
+                0x000000000800b65c       0x18 src/main.o
+                0x000000000800b65c                vtable for ros::Msg
+                0x000000000800b674                . = ALIGN (0x4)
 
-.rel.dyn        0x000000000800b66c        0x0
- .rel.iplt      0x000000000800b66c        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+.rel.dyn        0x000000000800b674        0x0
+ .rel.iplt      0x000000000800b674        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x000000000800b66c        0x0
-                0x000000000800b66c                __exidx_start = .
+.ARM            0x000000000800b674        0x0
+                0x000000000800b674                __exidx_start = .
  *(.ARM.exidx*)
-                0x000000000800b66c                __exidx_end = .
+                0x000000000800b674                __exidx_end = .
 
-.preinit_array  0x000000000800b66c        0x0
-                0x000000000800b66c                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x000000000800b674        0x0
+                0x000000000800b674                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x000000000800b66c                PROVIDE (__preinit_array_end, .)
+                0x000000000800b674                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x000000000800b66c        0x8
-                0x000000000800b66c                PROVIDE (__init_array_start, .)
+.init_array     0x000000000800b674        0x8
+                0x000000000800b674                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x000000000800b66c        0x4 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
- .init_array    0x000000000800b670        0x4 src/main.o
-                0x000000000800b674                PROVIDE (__init_array_end, .)
+ .init_array    0x000000000800b674        0x4 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+ .init_array    0x000000000800b678        0x4 src/main.o
+                0x000000000800b67c                PROVIDE (__init_array_end, .)
 
-.fini_array     0x000000000800b674        0x4
+.fini_array     0x000000000800b67c        0x4
                 [!provide]                        PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x000000000800b674        0x4 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
+ .fini_array    0x000000000800b67c        0x4 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end, .)
-                0x000000000800b678                _sidata = LOADADDR (.data)
+                0x000000000800b680                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000       0x98 load address 0x000000000800b678
+.data           0x0000000020000000       0x98 load address 0x000000000800b680
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -3545,12 +3546,12 @@ LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-
                 0x0000000020000038       0x60 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-impure.o)
                 0x0000000020000098                . = ALIGN (0x4)
                 0x0000000020000098                _edata = .
-                0x000000000800b710                _siccmram = LOADADDR (.ccmram)
+                0x000000000800b718                _siccmram = LOADADDR (.ccmram)
 
-.igot.plt       0x0000000020000098        0x0 load address 0x000000000800b710
+.igot.plt       0x0000000020000098        0x0 load address 0x000000000800b718
  .igot.plt      0x0000000020000098        0x0 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtbegin.o
 
-.ccmram         0x0000000010000000        0x0 load address 0x000000000800b710
+.ccmram         0x0000000010000000        0x0 load address 0x000000000800b718
                 0x0000000010000000                . = ALIGN (0x4)
                 0x0000000010000000                _sccmram = .
  *(.ccmram)
@@ -3849,10 +3850,10 @@ LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-
                 0x0000000020001e70                info_msg
  .bss.info_pub  0x0000000020001e78       0x14 src/main.o
                 0x0000000020001e78                info_pub
- .bss.ip_msg    0x0000000020001e8c        0xc src/main.o
-                0x0000000020001e8c                ip_msg
- .bss.ip_pub    0x0000000020001e98       0x14 src/main.o
-                0x0000000020001e98                ip_pub
+ .bss.dinp_msg  0x0000000020001e8c        0xc src/main.o
+                0x0000000020001e8c                dinp_msg
+ .bss.dinp_pub  0x0000000020001e98       0x14 src/main.o
+                0x0000000020001e98                dinp_pub
  .bss.heap_end.7012
                 0x0000000020001eac        0x4 src/syscalls.o
  .bss.__malloc_free_list
@@ -4012,7 +4013,7 @@ LOAD /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-
                 0x0000000000000b26       0x22 /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/crtn.o
 OUTPUT(mb_ros.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x2c180
+.debug_info     0x0000000000000000    0x2c18c
  .debug_info    0x0000000000000000      0x54d Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
  .debug_info    0x000000000000054d      0xbaf Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_can.o
  .debug_info    0x00000000000010fc      0x366 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
@@ -4039,13 +4040,13 @@ OUTPUT(mb_ros.elf elf32-littlearm)
  .debug_info    0x0000000000019fd2     0x2a11 src/adapter.o
  .debug_info    0x000000000001c9e3     0x2729 src/common.o
  .debug_info    0x000000000001f10c     0x2a16 src/interrupt.o
- .debug_info    0x0000000000021b22     0x74f4 src/main.o
- .debug_info    0x0000000000029016      0xd17 src/ros_lib/time.o
- .debug_info    0x0000000000029d2d       0x7f src/startup_stm32f40xx.o
- .debug_info    0x0000000000029dac      0x143 src/stm32f4xx_it.o
- .debug_info    0x0000000000029eef     0x103c src/syscalls.o
- .debug_info    0x000000000002af2b      0x5dd src/system_stm32f4xx.o
- .debug_info    0x000000000002b508      0xc78 src/tiny_printf.o
+ .debug_info    0x0000000000021b22     0x7505 src/main.o
+ .debug_info    0x0000000000029027      0xd17 src/ros_lib/time.o
+ .debug_info    0x0000000000029d3e       0x7a src/startup_stm32f40xx.o
+ .debug_info    0x0000000000029db8      0x143 src/stm32f4xx_it.o
+ .debug_info    0x0000000000029efb     0x103c src/syscalls.o
+ .debug_info    0x000000000002af37      0x5dd src/system_stm32f4xx.o
+ .debug_info    0x000000000002b514      0xc78 src/tiny_printf.o
 
 .debug_abbrev   0x0000000000000000     0x49f6
  .debug_abbrev  0x0000000000000000      0x172 Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
@@ -4185,7 +4186,7 @@ OUTPUT(mb_ros.elf elf32-littlearm)
  .debug_ranges  0x0000000000001078       0x20 src/system_stm32f4xx.o
  .debug_ranges  0x0000000000001098       0x50 src/tiny_printf.o
 
-.debug_line     0x0000000000000000     0xa75d
+.debug_line     0x0000000000000000     0xa764
  .debug_line    0x0000000000000000      0x23d Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
  .debug_line    0x000000000000023d      0x564 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_can.o
  .debug_line    0x00000000000007a1      0x2a0 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
@@ -4212,79 +4213,79 @@ OUTPUT(mb_ros.elf elf32-littlearm)
  .debug_line    0x0000000000007378      0x533 src/adapter.o
  .debug_line    0x00000000000078ab      0x4a0 src/common.o
  .debug_line    0x0000000000007d4b      0x588 src/interrupt.o
- .debug_line    0x00000000000082d3     0x162e src/main.o
- .debug_line    0x0000000000009901      0x372 src/ros_lib/time.o
- .debug_line    0x0000000000009c73       0x7a src/startup_stm32f40xx.o
- .debug_line    0x0000000000009ced      0x200 src/stm32f4xx_it.o
- .debug_line    0x0000000000009eed      0x3cf src/syscalls.o
- .debug_line    0x000000000000a2bc      0x203 src/system_stm32f4xx.o
- .debug_line    0x000000000000a4bf      0x29e src/tiny_printf.o
+ .debug_line    0x00000000000082d3     0x1635 src/main.o
+ .debug_line    0x0000000000009908      0x372 src/ros_lib/time.o
+ .debug_line    0x0000000000009c7a       0x7a src/startup_stm32f40xx.o
+ .debug_line    0x0000000000009cf4      0x200 src/stm32f4xx_it.o
+ .debug_line    0x0000000000009ef4      0x3cf src/syscalls.o
+ .debug_line    0x000000000000a2c3      0x203 src/system_stm32f4xx.o
+ .debug_line    0x000000000000a4c6      0x29e src/tiny_printf.o
 
-.debug_str      0x0000000000000000     0x7b86
- .debug_str     0x0000000000000000      0x3ed Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
-                                        0x45b (size before relaxing)
- .debug_str     0x00000000000003ed      0x48e Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_can.o
-                                        0x7cb (size before relaxing)
- .debug_str     0x000000000000087b      0x197 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
-                                        0x3e6 (size before relaxing)
- .debug_str     0x0000000000000a12      0x2b1 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
-                                        0x530 (size before relaxing)
- .debug_str     0x0000000000000cc3      0x465 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o
-                                        0x73f (size before relaxing)
- .debug_str     0x0000000000001128      0x5da Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
-                                        0x906 (size before relaxing)
- .debug_str     0x0000000000001702      0xb16 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
-                                        0xe5d (size before relaxing)
- .debug_str     0x0000000000002218      0x40a Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
-                                        0x71c (size before relaxing)
- .debug_str     0x0000000000002622      0x741 src/BIOS/bdc.o
-                                       0x1099 (size before relaxing)
- .debug_str     0x0000000000002d63       0x2d src/BIOS/gpio.o
-                                        0xfa8 (size before relaxing)
- .debug_str     0x0000000000002d90       0xa0 src/BIOS/multiplexer.o
-                                       0x1061 (size before relaxing)
- .debug_str     0x0000000000002e30       0xb9 src/BIOS/pwm.o
-                                       0x112d (size before relaxing)
- .debug_str     0x0000000000002ee9      0x842 src/BIOS/qei.o
-                                       0x1900 (size before relaxing)
- .debug_str     0x000000000000372b       0xd2 src/BIOS/shiftreg.o
-                                       0x10b2 (size before relaxing)
- .debug_str     0x00000000000037fd       0x94 src/BIOS/system.o
-                                       0x15af (size before relaxing)
- .debug_str     0x0000000000003891       0x7b src/BIOS/timer.o
-                                       0x15d8 (size before relaxing)
- .debug_str     0x000000000000390c       0xb1 src/BIOS/uart.o
-                                       0x15ca (size before relaxing)
- .debug_str     0x00000000000039bd      0x259 src/CAN/can.o
-                                       0x1a3f (size before relaxing)
- .debug_str     0x0000000000003c16      0x403 src/I2C/i2c1.o
-                                       0x1c7f (size before relaxing)
- .debug_str     0x0000000000004019       0x41 src/I2C/i2c2.o
-                                       0x1c7f (size before relaxing)
- .debug_str     0x000000000000405a       0x41 src/I2C/i2c3.o
-                                       0x1c7f (size before relaxing)
- .debug_str     0x000000000000409b      0x48f src/ROS/hardwareserial.o
-                                        0xb26 (size before relaxing)
- .debug_str     0x000000000000452a       0x3b src/ROS/millisecondtimer.o
-                                        0x217 (size before relaxing)
- .debug_str     0x0000000000004565      0x455 src/adapter.o
-                                       0x1fa8 (size before relaxing)
- .debug_str     0x00000000000049ba       0x33 src/common.o
-                                       0x1dd3 (size before relaxing)
- .debug_str     0x00000000000049ed      0x137 src/interrupt.o
-                                       0x1f85 (size before relaxing)
- .debug_str     0x0000000000004b24     0x2c20 src/main.o
-                                       0x4ed7 (size before relaxing)
- .debug_str     0x0000000000007744       0x53 src/ros_lib/time.o
-                                        0x8fe (size before relaxing)
- .debug_str     0x0000000000007797       0x96 src/stm32f4xx_it.o
-                                        0x26c (size before relaxing)
- .debug_str     0x000000000000782d      0x256 src/syscalls.o
+.debug_str      0x0000000000000000     0x7bb0
+ .debug_str     0x0000000000000000      0x3e8 Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
+                                        0x456 (size before relaxing)
+ .debug_str     0x00000000000003e8      0x48e Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_can.o
+                                        0x7c6 (size before relaxing)
+ .debug_str     0x0000000000000876      0x197 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.o
+                                        0x3e1 (size before relaxing)
+ .debug_str     0x0000000000000a0d      0x2b1 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.o
+                                        0x52b (size before relaxing)
+ .debug_str     0x0000000000000cbe      0x465 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.o
+                                        0x73a (size before relaxing)
+ .debug_str     0x0000000000001123      0x5da Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.o
+                                        0x901 (size before relaxing)
+ .debug_str     0x00000000000016fd      0xb16 Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.o
+                                        0xe58 (size before relaxing)
+ .debug_str     0x0000000000002213      0x40a Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.o
+                                        0x717 (size before relaxing)
+ .debug_str     0x000000000000261d      0x741 src/BIOS/bdc.o
+                                       0x1094 (size before relaxing)
+ .debug_str     0x0000000000002d5e       0x2d src/BIOS/gpio.o
+                                        0xfa3 (size before relaxing)
+ .debug_str     0x0000000000002d8b       0xa0 src/BIOS/multiplexer.o
+                                       0x105c (size before relaxing)
+ .debug_str     0x0000000000002e2b       0xb9 src/BIOS/pwm.o
+                                       0x1128 (size before relaxing)
+ .debug_str     0x0000000000002ee4      0x842 src/BIOS/qei.o
+                                       0x18fb (size before relaxing)
+ .debug_str     0x0000000000003726       0xd2 src/BIOS/shiftreg.o
+                                       0x10ad (size before relaxing)
+ .debug_str     0x00000000000037f8       0x94 src/BIOS/system.o
+                                       0x15aa (size before relaxing)
+ .debug_str     0x000000000000388c       0x7b src/BIOS/timer.o
+                                       0x15d3 (size before relaxing)
+ .debug_str     0x0000000000003907       0xb1 src/BIOS/uart.o
+                                       0x15c5 (size before relaxing)
+ .debug_str     0x00000000000039b8      0x259 src/CAN/can.o
+                                       0x1a3a (size before relaxing)
+ .debug_str     0x0000000000003c11      0x403 src/I2C/i2c1.o
+                                       0x1c7a (size before relaxing)
+ .debug_str     0x0000000000004014       0x41 src/I2C/i2c2.o
+                                       0x1c7a (size before relaxing)
+ .debug_str     0x0000000000004055       0x41 src/I2C/i2c3.o
+                                       0x1c7a (size before relaxing)
+ .debug_str     0x0000000000004096      0x48f src/ROS/hardwareserial.o
+                                        0xb21 (size before relaxing)
+ .debug_str     0x0000000000004525       0x3b src/ROS/millisecondtimer.o
+                                        0x212 (size before relaxing)
+ .debug_str     0x0000000000004560      0x455 src/adapter.o
+                                       0x1fa3 (size before relaxing)
+ .debug_str     0x00000000000049b5       0x33 src/common.o
+                                       0x1dce (size before relaxing)
+ .debug_str     0x00000000000049e8      0x137 src/interrupt.o
+                                       0x1f80 (size before relaxing)
+ .debug_str     0x0000000000004b1f     0x2c4f src/main.o
+                                       0x4f0d (size before relaxing)
+ .debug_str     0x000000000000776e       0x53 src/ros_lib/time.o
                                         0x8f9 (size before relaxing)
- .debug_str     0x0000000000007a83       0x8f src/system_stm32f4xx.o
-                                        0x40f (size before relaxing)
- .debug_str     0x0000000000007b12       0x74 src/tiny_printf.o
-                                        0x691 (size before relaxing)
+ .debug_str     0x00000000000077c1       0x96 src/stm32f4xx_it.o
+                                        0x267 (size before relaxing)
+ .debug_str     0x0000000000007857      0x256 src/syscalls.o
+                                        0x8f4 (size before relaxing)
+ .debug_str     0x0000000000007aad       0x8f src/system_stm32f4xx.o
+                                        0x40a (size before relaxing)
+ .debug_str     0x0000000000007b3c       0x74 src/tiny_printf.o
+                                        0x68c (size before relaxing)
 
 .comment        0x0000000000000000       0x7c
  .comment       0x0000000000000000       0x7c Libraries/STM32F4xx_StdPeriph_Driver/src/misc.o
@@ -6959,9 +6960,12 @@ cleanup_glue                                      /opt/Atollic_TrueSTUDIO_for_ST
 count                                             src/interrupt.o
 count2                                            src/interrupt.o
 count3                                            src/interrupt.o
+counter                                           src/main.o
 current_offset                                    src/main.o
 current_time                                      src/main.o
 delay                                             src/ROS/millisecondtimer.o
+dinp_msg                                          src/main.o
+dinp_pub                                          src/main.o
 end                                               src/syscalls.o
 environ                                           src/syscalls.o
 errno                                             /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-reent.o)
@@ -7007,8 +7011,6 @@ insData_receive                                   src/main.o
                                                   src/common.o
                                                   src/adapter.o
 insData_send                                      src/RNS_interface.V2/RNS_interface.o
-ip_msg                                            src/main.o
-ip_pub                                            src/main.o
 iprintf                                           src/tiny_printf.o
 ldiv                                              /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-ldiv.o)
                                                   src/BIOS/utils.o
@@ -7061,7 +7063,7 @@ mrcvhandlerI2C3                                   src/main.o
 nh                                                src/main.o
 prev_update_time                                  src/main.o
 printf                                            src/tiny_printf.o
-publishInputPin()                                 src/main.o
+publishDigitalInput()                             src/main.o
 puts                                              src/tiny_printf.o
 qei                                               src/BIOS/qei.o
 raise                                             /opt/Atollic_TrueSTUDIO_for_STM32_x86_64_9.3.0/ARMTools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/../../../../arm-atollic-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-signal.o)
@@ -7243,18 +7245,18 @@ utmrbc_msgs::BDC::deserialize(unsigned char*)     src/main.o
 utmrbc_msgs::BDC::getMD5()                        src/main.o
 utmrbc_msgs::BDC::getType()                       src/main.o
 utmrbc_msgs::BDC::serialize(unsigned char*) const src/main.o
+utmrbc_msgs::DigitalInput::DigitalInput()         src/main.o
+utmrbc_msgs::DigitalInput::DigitalInput()         src/main.o
+utmrbc_msgs::DigitalInput::deserialize(unsigned char*) src/main.o
+utmrbc_msgs::DigitalInput::getMD5()               src/main.o
+utmrbc_msgs::DigitalInput::getType()              src/main.o
+utmrbc_msgs::DigitalInput::serialize(unsigned char*) const src/main.o
 utmrbc_msgs::HSPM::HSPM()                         src/main.o
 utmrbc_msgs::HSPM::HSPM()                         src/main.o
 utmrbc_msgs::HSPM::deserialize(unsigned char*)    src/main.o
 utmrbc_msgs::HSPM::getMD5()                       src/main.o
 utmrbc_msgs::HSPM::getType()                      src/main.o
 utmrbc_msgs::HSPM::serialize(unsigned char*) const src/main.o
-utmrbc_msgs::InputPin::InputPin()                 src/main.o
-utmrbc_msgs::InputPin::InputPin()                 src/main.o
-utmrbc_msgs::InputPin::deserialize(unsigned char*) src/main.o
-utmrbc_msgs::InputPin::getMD5()                   src/main.o
-utmrbc_msgs::InputPin::getType()                  src/main.o
-utmrbc_msgs::InputPin::serialize(unsigned char*) const src/main.o
 utmrbc_msgs::LED::LED()                           src/main.o
 utmrbc_msgs::LED::LED()                           src/main.o
 utmrbc_msgs::LED::deserialize(unsigned char*)     src/main.o
@@ -7279,6 +7281,6 @@ vtable for rosserial_msgs::TopicInfo              src/main.o
 vtable for std_msgs::String                       src/main.o
 vtable for std_msgs::Time                         src/main.o
 vtable for utmrbc_msgs::BDC                       src/main.o
+vtable for utmrbc_msgs::DigitalInput              src/main.o
 vtable for utmrbc_msgs::HSPM                      src/main.o
-vtable for utmrbc_msgs::InputPin                  src/main.o
 vtable for utmrbc_msgs::LED                       src/main.o

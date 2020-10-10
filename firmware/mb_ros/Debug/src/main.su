@@ -40,11 +40,11 @@ LED.h:26:17:virtual int utmrbc_msgs::LED::serialize(unsigned char*) const	32	sta
 LED.h:49:17:virtual int utmrbc_msgs::LED::deserialize(unsigned char*)	32	static
 LED.h:74:18:virtual const char* utmrbc_msgs::LED::getType()	16	static
 LED.h:75:18:virtual const char* utmrbc_msgs::LED::getMD5()	16	static
-InputPin.h:20:5:utmrbc_msgs::InputPin::InputPin()	16	static
-InputPin.h:26:17:virtual int utmrbc_msgs::InputPin::serialize(unsigned char*) const	32	static
-InputPin.h:49:17:virtual int utmrbc_msgs::InputPin::deserialize(unsigned char*)	32	static
-InputPin.h:74:18:virtual const char* utmrbc_msgs::InputPin::getType()	16	static
-InputPin.h:75:18:virtual const char* utmrbc_msgs::InputPin::getMD5()	16	static
+DigitalInput.h:20:5:utmrbc_msgs::DigitalInput::DigitalInput()	16	static
+DigitalInput.h:26:17:virtual int utmrbc_msgs::DigitalInput::serialize(unsigned char*) const	32	static
+DigitalInput.h:49:17:virtual int utmrbc_msgs::DigitalInput::deserialize(unsigned char*)	32	static
+DigitalInput.h:74:18:virtual const char* utmrbc_msgs::DigitalInput::getType()	16	static
+DigitalInput.h:75:18:virtual const char* utmrbc_msgs::DigitalInput::getMD5()	16	static
 BDC.h:20:5:utmrbc_msgs::BDC::BDC()	16	static
 BDC.h:26:17:virtual int utmrbc_msgs::BDC::serialize(unsigned char*) const	32	static
 BDC.h:52:17:virtual int utmrbc_msgs::BDC::deserialize(unsigned char*)	32	static
@@ -55,16 +55,16 @@ HSPM.h:26:17:virtual int utmrbc_msgs::HSPM::serialize(unsigned char*) const	32	s
 HSPM.h:49:17:virtual int utmrbc_msgs::HSPM::deserialize(unsigned char*)	32	static
 HSPM.h:74:18:virtual const char* utmrbc_msgs::HSPM::getType()	16	static
 HSPM.h:75:18:virtual const char* utmrbc_msgs::HSPM::getMD5()	16	static
-main.cpp:41:5:int main()	8	static
-main.cpp:63:7:void TIM6_DAC_IRQHandler()	8	static
-main.cpp:78:6:void ROS_Init()	8	static
-main.cpp:93:6:void ROS_Update()	8	static
-main.cpp:103:6:void LEDCallback(const utmrbc_msgs::LED&)	24	static
-main.cpp:126:6:void BDCCallback(const utmrbc_msgs::BDC&)	24	static
-main.cpp:164:6:void HSPMCallback(const utmrbc_msgs::HSPM&)	24	static
-main.cpp:248:6:void publishInputPin()	16	static
-main.cpp:337:6:void updateTime()	24	static
-main.cpp:346:11:ros::Time rosNow()	16	static
+main.cpp:42:5:int main()	8	static
+main.cpp:64:7:void TIM6_DAC_IRQHandler()	8	static
+main.cpp:79:6:void ROS_Init()	8	static
+main.cpp:94:6:void ROS_Update()	8	static
+main.cpp:104:6:void LEDCallback(const utmrbc_msgs::LED&)	24	static
+main.cpp:127:6:void BDCCallback(const utmrbc_msgs::BDC&)	24	static
+main.cpp:165:6:void HSPMCallback(const utmrbc_msgs::HSPM&)	24	static
+main.cpp:249:6:void publishDigitalInput()	16	static
+main.cpp:338:6:void updateTime()	24	static
+main.cpp:347:11:ros::Time rosNow()	16	static
 msg.h:129:15:static void ros::Msg::varToArr(A, V) [with A = unsigned char*; V = long unsigned int]	24	static
 msg.h:137:15:static void ros::Msg::arrToVar(V&, A) [with V = long unsigned int; A = unsigned char*]	24	static
 node_handle.h:49:7:ros::NodeHandleBase_::NodeHandleBase_()	16	static
@@ -88,7 +88,7 @@ node_handle.h:510:15:int ros::NodeHandle_<Hardware, MAX_SUBSCRIBERS, MAX_PUBLISH
 node_handle.h:401:8:void ros::NodeHandle_<Hardware, MAX_SUBSCRIBERS, MAX_PUBLISHERS, INPUT_SIZE, OUTPUT_SIZE>::setNow(ros::Time&) [with Hardware = STM32Hardware; int MAX_SUBSCRIBERS = 25; int MAX_PUBLISHERS = 25; int INPUT_SIZE = 1024; int OUTPUT_SIZE = 1024]	24	static
 node_handle.h:572:8:void ros::NodeHandle_<Hardware, MAX_SUBSCRIBERS, MAX_PUBLISHERS, INPUT_SIZE, OUTPUT_SIZE>::logerror(const char*) [with Hardware = STM32Hardware; int MAX_SUBSCRIBERS = 25; int MAX_PUBLISHERS = 25; int INPUT_SIZE = 1024; int OUTPUT_SIZE = 1024]	16	static
 node_handle.h:551:8:void ros::NodeHandle_<Hardware, MAX_SUBSCRIBERS, MAX_PUBLISHERS, INPUT_SIZE, OUTPUT_SIZE>::log(char, const char*) [with Hardware = STM32Hardware; int MAX_SUBSCRIBERS = 25; int MAX_PUBLISHERS = 25; int INPUT_SIZE = 1024; int OUTPUT_SIZE = 1024]	40	static
-main.cpp:349:1:void __static_initialization_and_destruction_0(int, int)	16	static
+main.cpp:350:1:void __static_initialization_and_destruction_0(int, int)	16	static
 subscriber.h:114:16:void ros::Subscriber<MsgT, void>::callback(unsigned char*) [with MsgT = utmrbc_msgs::HSPM]	16	static
 subscriber.h:128:15:int ros::Subscriber<MsgT, void>::getEndpointType() [with MsgT = utmrbc_msgs::HSPM]	16	static
 subscriber.h:120:24:const char* ros::Subscriber<MsgT, void>::getMsgType() [with MsgT = utmrbc_msgs::HSPM]	16	static
@@ -102,4 +102,4 @@ subscriber.h:128:15:int ros::Subscriber<MsgT, void>::getEndpointType() [with Msg
 subscriber.h:120:24:const char* ros::Subscriber<MsgT, void>::getMsgType() [with MsgT = utmrbc_msgs::LED]	16	static
 subscriber.h:124:24:const char* ros::Subscriber<MsgT, void>::getMsgMD5() [with MsgT = utmrbc_msgs::LED]	16	static
 node_handle.h:362:16:bool ros::NodeHandle_<Hardware, MAX_SUBSCRIBERS, MAX_PUBLISHERS, INPUT_SIZE, OUTPUT_SIZE>::connected() [with Hardware = STM32Hardware; int MAX_SUBSCRIBERS = 25; int MAX_PUBLISHERS = 25; int INPUT_SIZE = 1024; int OUTPUT_SIZE = 1024]	16	static
-main.cpp:349:1:cpp)	8	static
+main.cpp:350:1:cpp)	8	static

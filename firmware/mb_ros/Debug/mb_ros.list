@@ -7,13 +7,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
   1 .text         0000b0d4  08000188  08000188  00010188  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       00000410  0800b25c  0800b25c  0001b25c  2**2
+  2 .rodata       00000418  0800b25c  0800b25c  0001b25c  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .init_array   00000008  0800b66c  0800b66c  0001b66c  2**2
+  3 .init_array   00000008  0800b674  0800b674  0001b674  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  4 .fini_array   00000004  0800b674  0800b674  0001b674  2**2
+  4 .fini_array   00000004  0800b67c  0800b67c  0001b67c  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  5 .data         00000098  20000000  0800b678  00020000  2**2
+  5 .data         00000098  20000000  0800b680  00020000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
   6 .ccmram       00000000  10000000  10000000  00020098  2**0
                   CONTENTS
@@ -23,21 +23,21 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
   9 .ARM.attributes 00000030  00000000  00000000  00020098  2**0
                   CONTENTS, READONLY
- 10 .debug_info   0002c180  00000000  00000000  000200c8  2**0
+ 10 .debug_info   0002c18c  00000000  00000000  000200c8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_abbrev 000049f6  00000000  00000000  0004c248  2**0
+ 11 .debug_abbrev 000049f6  00000000  00000000  0004c254  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_aranges 000012d8  00000000  00000000  00050c40  2**3
+ 12 .debug_aranges 000012d8  00000000  00000000  00050c50  2**3
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_ranges 000010e8  00000000  00000000  00051f18  2**3
+ 13 .debug_ranges 000010e8  00000000  00000000  00051f28  2**3
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_line   0000a75d  00000000  00000000  00053000  2**0
+ 14 .debug_line   0000a764  00000000  00000000  00053010  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_str    00007b86  00000000  00000000  0005d75d  2**0
+ 15 .debug_str    00007bb0  00000000  00000000  0005d774  2**0
                   CONTENTS, READONLY, DEBUGGING
- 16 .comment      0000007c  00000000  00000000  000652e3  2**0
+ 16 .comment      0000007c  00000000  00000000  00065324  2**0
                   CONTENTS, READONLY
- 17 .debug_frame  00005144  00000000  00000000  00065360  2**2
+ 17 .debug_frame  00005144  00000000  00000000  000653a0  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -17604,7 +17604,7 @@ class Msg
  8007c58:	46bd      	mov	sp, r7
  8007c5a:	f85d 7b04 	ldr.w	r7, [sp], #4
  8007c5e:	4770      	bx	lr
- 8007c60:	0800b65c 	.word	0x0800b65c
+ 8007c60:	0800b664 	.word	0x0800b664
 
 08007c64 <_ZN14rosserial_msgs3LogC1Ev>:
       enum { INFO = 1 };
@@ -17638,7 +17638,7 @@ class Msg
  8007c8a:	3708      	adds	r7, #8
  8007c8c:	46bd      	mov	sp, r7
  8007c8e:	bd80      	pop	{r7, pc}
- 8007c90:	0800b644 	.word	0x0800b644
+ 8007c90:	0800b64c 	.word	0x0800b64c
  8007c94:	0800b25c 	.word	0x0800b25c
 
 08007c98 <_ZNK14rosserial_msgs3Log9serializeEPh>:
@@ -17869,7 +17869,7 @@ class Msg
  8007e02:	3708      	adds	r7, #8
  8007e04:	46bd      	mov	sp, r7
  8007e06:	bd80      	pop	{r7, pc}
- 8007e08:	0800b62c 	.word	0x0800b62c
+ 8007e08:	0800b634 	.word	0x0800b634
 
 08007e0c <_ZNK14rosserial_msgs20RequestParamResponse9serializeEPh>:
 
@@ -18652,7 +18652,7 @@ class Msg
  8008320:	f85d 7b04 	ldr.w	r7, [sp], #4
  8008324:	4770      	bx	lr
  8008326:	bf00      	nop
- 8008328:	0800b4d8 	.word	0x0800b4d8
+ 8008328:	0800b4e0 	.word	0x0800b4e0
 
 0800832c <_ZN14rosserial_msgs20RequestParamResponse6getMD5Ev>:
     const char * getMD5(){ return "9f0e98bda65981986ddf53afa7a40e49"; };
@@ -18714,7 +18714,7 @@ class Msg
  8008382:	46bd      	mov	sp, r7
  8008384:	bd80      	pop	{r7, pc}
  8008386:	bf00      	nop
- 8008388:	0800b614 	.word	0x0800b614
+ 8008388:	0800b61c 	.word	0x0800b61c
  800838c:	0800b25c 	.word	0x0800b25c
 
 08008390 <_ZNK14rosserial_msgs9TopicInfo9serializeEPh>:
@@ -19264,7 +19264,7 @@ public:
  800871a:	46bd      	mov	sp, r7
  800871c:	bd80      	pop	{r7, pc}
  800871e:	bf00      	nop
- 8008720:	0800b5fc 	.word	0x0800b5fc
+ 8008720:	0800b604 	.word	0x0800b604
 
 08008724 <_ZNK8std_msgs4Time9serializeEPh>:
 
@@ -19814,7 +19814,7 @@ public:
  8008a76:	46bd      	mov	sp, r7
  8008a78:	bd80      	pop	{r7, pc}
  8008a7a:	bf00      	nop
- 8008a7c:	0800b5b8 	.word	0x0800b5b8
+ 8008a7c:	0800b5c0 	.word	0x0800b5c0
  8008a80:	0800b25c 	.word	0x0800b25c
 
 08008a84 <_ZNK8std_msgs6String9serializeEPh>:
@@ -20010,7 +20010,7 @@ public:
  8008bb2:	3708      	adds	r7, #8
  8008bb4:	46bd      	mov	sp, r7
  8008bb6:	bd80      	pop	{r7, pc}
- 8008bb8:	0800b5a0 	.word	0x0800b5a0
+ 8008bb8:	0800b5a8 	.word	0x0800b5a8
 
 08008bbc <_ZNK11utmrbc_msgs3LED9serializeEPh>:
 
@@ -20227,13 +20227,13 @@ public:
  8008cfa:	bf00      	nop
  8008cfc:	0800b374 	.word	0x0800b374
 
-08008d00 <_ZN11utmrbc_msgs8InputPinC1Ev>:
+08008d00 <_ZN11utmrbc_msgs12DigitalInputC1Ev>:
       typedef int32_t _pin_type;
       _pin_type pin;
       typedef bool _signal_type;
       _signal_type signal;
 
-    InputPin():
+    DigitalInput():
  8008d00:	b580      	push	{r7, lr}
  8008d02:	b082      	sub	sp, #8
  8008d04:	af00      	add	r7, sp, #0
@@ -20243,7 +20243,7 @@ public:
  8008d08:	687b      	ldr	r3, [r7, #4]
  8008d0a:	4618      	mov	r0, r3
  8008d0c:	f7fe ff9a 	bl	8007c44 <_ZN3ros3MsgC1Ev>
- 8008d10:	4a06      	ldr	r2, [pc, #24]	; (8008d2c <_ZN11utmrbc_msgs8InputPinC1Ev+0x2c>)
+ 8008d10:	4a06      	ldr	r2, [pc, #24]	; (8008d2c <_ZN11utmrbc_msgs12DigitalInputC1Ev+0x2c>)
  8008d12:	687b      	ldr	r3, [r7, #4]
  8008d14:	601a      	str	r2, [r3, #0]
  8008d16:	687b      	ldr	r3, [r7, #4]
@@ -20259,9 +20259,9 @@ public:
  8008d26:	3708      	adds	r7, #8
  8008d28:	46bd      	mov	sp, r7
  8008d2a:	bd80      	pop	{r7, pc}
- 8008d2c:	0800b588 	.word	0x0800b588
+ 8008d2c:	0800b590 	.word	0x0800b590
 
-08008d30 <_ZNK11utmrbc_msgs8InputPin9serializeEPh>:
+08008d30 <_ZNK11utmrbc_msgs12DigitalInput9serializeEPh>:
 
     virtual int serialize(unsigned char *outbuffer) const
  8008d30:	b480      	push	{r7}
@@ -20346,7 +20346,7 @@ public:
  8008da4:	f85d 7b04 	ldr.w	r7, [sp], #4
  8008da8:	4770      	bx	lr
 
-08008daa <_ZN11utmrbc_msgs8InputPin11deserializeEPh>:
+08008daa <_ZN11utmrbc_msgs12DigitalInput11deserializeEPh>:
 
     virtual int deserialize(unsigned char *inbuffer)
  8008daa:	b480      	push	{r7}
@@ -20445,14 +20445,14 @@ public:
  8008e38:	4770      	bx	lr
 	...
 
-08008e3c <_ZN11utmrbc_msgs8InputPin7getTypeEv>:
+08008e3c <_ZN11utmrbc_msgs12DigitalInput7getTypeEv>:
 
-    const char * getType(){ return "utmrbc_msgs/InputPin"; };
+    const char * getType(){ return "utmrbc_msgs/DigitalInput"; };
  8008e3c:	b480      	push	{r7}
  8008e3e:	b083      	sub	sp, #12
  8008e40:	af00      	add	r7, sp, #0
  8008e42:	6078      	str	r0, [r7, #4]
- 8008e44:	4b03      	ldr	r3, [pc, #12]	; (8008e54 <_ZN11utmrbc_msgs8InputPin7getTypeEv+0x18>)
+ 8008e44:	4b03      	ldr	r3, [pc, #12]	; (8008e54 <_ZN11utmrbc_msgs12DigitalInput7getTypeEv+0x18>)
  8008e46:	4618      	mov	r0, r3
  8008e48:	370c      	adds	r7, #12
  8008e4a:	46bd      	mov	sp, r7
@@ -20461,20 +20461,20 @@ public:
  8008e52:	bf00      	nop
  8008e54:	0800b398 	.word	0x0800b398
 
-08008e58 <_ZN11utmrbc_msgs8InputPin6getMD5Ev>:
+08008e58 <_ZN11utmrbc_msgs12DigitalInput6getMD5Ev>:
     const char * getMD5(){ return "359ffdef4df401a3c881b8043c9e8293"; };
  8008e58:	b480      	push	{r7}
  8008e5a:	b083      	sub	sp, #12
  8008e5c:	af00      	add	r7, sp, #0
  8008e5e:	6078      	str	r0, [r7, #4]
- 8008e60:	4b03      	ldr	r3, [pc, #12]	; (8008e70 <_ZN11utmrbc_msgs8InputPin6getMD5Ev+0x18>)
+ 8008e60:	4b03      	ldr	r3, [pc, #12]	; (8008e70 <_ZN11utmrbc_msgs12DigitalInput6getMD5Ev+0x18>)
  8008e62:	4618      	mov	r0, r3
  8008e64:	370c      	adds	r7, #12
  8008e66:	46bd      	mov	sp, r7
  8008e68:	f85d 7b04 	ldr.w	r7, [sp], #4
  8008e6c:	4770      	bx	lr
  8008e6e:	bf00      	nop
- 8008e70:	0800b3b0 	.word	0x0800b3b0
+ 8008e70:	0800b3b4 	.word	0x0800b3b4
 
 08008e74 <_ZN11utmrbc_msgs3BDCC1Ev>:
       typedef int32_t _bdc_type;
@@ -20508,7 +20508,7 @@ public:
  8008e9a:	3708      	adds	r7, #8
  8008e9c:	46bd      	mov	sp, r7
  8008e9e:	bd80      	pop	{r7, pc}
- 8008ea0:	0800b570 	.word	0x0800b570
+ 8008ea0:	0800b578 	.word	0x0800b578
 
 08008ea4 <_ZNK11utmrbc_msgs3BDC9serializeEPh>:
 
@@ -20764,7 +20764,7 @@ public:
  8009024:	f85d 7b04 	ldr.w	r7, [sp], #4
  8009028:	4770      	bx	lr
  800902a:	bf00      	nop
- 800902c:	0800b3d4 	.word	0x0800b3d4
+ 800902c:	0800b3d8 	.word	0x0800b3d8
 
 08009030 <_ZN11utmrbc_msgs3BDC6getMD5Ev>:
     const char * getMD5(){ return "2918c8f84390a5f9c92a1c6a1a2d5dd8"; };
@@ -20779,7 +20779,7 @@ public:
  8009040:	f85d 7b04 	ldr.w	r7, [sp], #4
  8009044:	4770      	bx	lr
  8009046:	bf00      	nop
- 8009048:	0800b3e4 	.word	0x0800b3e4
+ 8009048:	0800b3e8 	.word	0x0800b3e8
 
 0800904c <_ZN11utmrbc_msgs4HSPMC1Ev>:
       typedef int32_t _hspm_type;
@@ -20813,7 +20813,7 @@ public:
  8009072:	3708      	adds	r7, #8
  8009074:	46bd      	mov	sp, r7
  8009076:	bd80      	pop	{r7, pc}
- 8009078:	0800b558 	.word	0x0800b558
+ 8009078:	0800b560 	.word	0x0800b560
 
 0800907c <_ZNK11utmrbc_msgs4HSPM9serializeEPh>:
 
@@ -21013,7 +21013,7 @@ public:
  8009198:	f85d 7b04 	ldr.w	r7, [sp], #4
  800919c:	4770      	bx	lr
  800919e:	bf00      	nop
- 80091a0:	0800b408 	.word	0x0800b408
+ 80091a0:	0800b40c 	.word	0x0800b40c
 
 080091a4 <_ZN11utmrbc_msgs4HSPM6getMD5Ev>:
     const char * getMD5(){ return "5f0f63db1293a5a3d023345ba3cb3ac7"; };
@@ -21028,7 +21028,7 @@ public:
  80091b4:	f85d 7b04 	ldr.w	r7, [sp], #4
  80091b8:	4770      	bx	lr
  80091ba:	bf00      	nop
- 80091bc:	0800b41c 	.word	0x0800b41c
+ 80091bc:	0800b420 	.word	0x0800b420
 
 080091c0 <main>:
 
@@ -21171,7 +21171,7 @@ void ROS_Init()
  80092a0:	490b      	ldr	r1, [pc, #44]	; (80092d0 <_Z8ROS_Initv+0x64>)
  80092a2:	4807      	ldr	r0, [pc, #28]	; (80092c0 <_Z8ROS_Initv+0x54>)
  80092a4:	f000 ff86 	bl	800a1b4 <_ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi1024ELi1024EE9advertiseERNS_9PublisherE>
-	nh.advertise(ip_pub);
+	nh.advertise(dinp_pub);
  80092a8:	490a      	ldr	r1, [pc, #40]	; (80092d4 <_Z8ROS_Initv+0x68>)
  80092aa:	4805      	ldr	r0, [pc, #20]	; (80092c0 <_Z8ROS_Initv+0x54>)
  80092ac:	f000 ff82 	bl	800a1b4 <_ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi1024ELi1024EE9advertiseERNS_9PublisherE>
@@ -21201,8 +21201,8 @@ void ROS_Update()
  80092de:	af00      	add	r7, sp, #0
 	updateTime();
  80092e0:	f000 fb7c 	bl	80099dc <_Z10updateTimev>
-	publishInputPin();
- 80092e4:	f000 f9dc 	bl	80096a0 <_Z15publishInputPinv>
+	publishDigitalInput();
+ 80092e4:	f000 f9dc 	bl	80096a0 <_Z19publishDigitalInputv>
 	prev_update_time = t;
  80092e8:	4b02      	ldr	r3, [pc, #8]	; (80092f4 <_Z10ROS_Updatev+0x18>)
  80092ea:	681b      	ldr	r3, [r3, #0]
@@ -21307,7 +21307,7 @@ void LEDCallback(const utmrbc_msgs::LED &led_msg)
  8009384:	46bd      	mov	sp, r7
  8009386:	bd80      	pop	{r7, pc}
  8009388:	40020814 	.word	0x40020814
- 800938c:	0800b440 	.word	0x0800b440
+ 800938c:	0800b444 	.word	0x0800b444
  8009390:	20001da8 	.word	0x20001da8
  8009394:	20001e70 	.word	0x20001e70
  8009398:	20001e78 	.word	0x20001e78
@@ -21432,7 +21432,7 @@ void BDCCallback(const utmrbc_msgs::BDC &bdc_msg)
  8009468:	20001388 	.word	0x20001388
  800946c:	200013a8 	.word	0x200013a8
  8009470:	200013c8 	.word	0x200013c8
- 8009474:	0800b454 	.word	0x0800b454
+ 8009474:	0800b458 	.word	0x0800b458
  8009478:	20001da8 	.word	0x20001da8
  800947c:	20001e70 	.word	0x20001e70
  8009480:	20001e78 	.word	0x20001e78
@@ -21728,17 +21728,17 @@ void HSPMCallback(const utmrbc_msgs::HSPM &hspm_msg)
  8009688:	bd80      	pop	{r7, pc}
  800968a:	bf00      	nop
  800968c:	2000125c 	.word	0x2000125c
- 8009690:	0800b468 	.word	0x0800b468
+ 8009690:	0800b46c 	.word	0x0800b46c
  8009694:	20001da8 	.word	0x20001da8
  8009698:	20001e70 	.word	0x20001e70
  800969c:	20001e78 	.word	0x20001e78
 
-080096a0 <_Z15publishInputPinv>:
+080096a0 <_Z19publishDigitalInputv>:
 
 /*******************************************************************************
 * Publish functions
 *******************************************************************************/
-void publishInputPin()
+void publishDigitalInput()
 {
  80096a0:	b580      	push	{r7, lr}
  80096a2:	b082      	sub	sp, #8
@@ -21748,7 +21748,7 @@ void publishInputPin()
 
 	if (!IP1)
  80096a6:	f44f 5180 	mov.w	r1, #4096	; 0x1000
- 80096aa:	48b1      	ldr	r0, [pc, #708]	; (8009970 <_Z15publishInputPinv+0x2d0>)
+ 80096aa:	48b1      	ldr	r0, [pc, #708]	; (8009970 <_Z19publishDigitalInputv+0x2d0>)
  80096ac:	f7f7 faf2 	bl	8000c94 <GPIO_ReadInputDataBit>
  80096b0:	4603      	mov	r3, r0
  80096b2:	2b00      	cmp	r3, #0
@@ -21757,14 +21757,14 @@ void publishInputPin()
  80096b8:	2300      	movne	r3, #0
  80096ba:	b2db      	uxtb	r3, r3
  80096bc:	2b00      	cmp	r3, #0
- 80096be:	d00c      	beq.n	80096da <_Z15publishInputPinv+0x3a>
+ 80096be:	d00c      	beq.n	80096da <_Z19publishDigitalInputv+0x3a>
 	{
 		pin = 1;
  80096c0:	2301      	movs	r3, #1
  80096c2:	607b      	str	r3, [r7, #4]
 		signal = IP1;
  80096c4:	f44f 5180 	mov.w	r1, #4096	; 0x1000
- 80096c8:	48a9      	ldr	r0, [pc, #676]	; (8009970 <_Z15publishInputPinv+0x2d0>)
+ 80096c8:	48a9      	ldr	r0, [pc, #676]	; (8009970 <_Z19publishDigitalInputv+0x2d0>)
  80096ca:	f7f7 fae3 	bl	8000c94 <GPIO_ReadInputDataBit>
  80096ce:	4603      	mov	r3, r0
  80096d0:	2b00      	cmp	r3, #0
@@ -21775,7 +21775,7 @@ void publishInputPin()
 	}
 	if (!IP2)
  80096da:	f44f 5100 	mov.w	r1, #8192	; 0x2000
- 80096de:	48a4      	ldr	r0, [pc, #656]	; (8009970 <_Z15publishInputPinv+0x2d0>)
+ 80096de:	48a4      	ldr	r0, [pc, #656]	; (8009970 <_Z19publishDigitalInputv+0x2d0>)
  80096e0:	f7f7 fad8 	bl	8000c94 <GPIO_ReadInputDataBit>
  80096e4:	4603      	mov	r3, r0
  80096e6:	2b00      	cmp	r3, #0
@@ -21784,14 +21784,14 @@ void publishInputPin()
  80096ec:	2300      	movne	r3, #0
  80096ee:	b2db      	uxtb	r3, r3
  80096f0:	2b00      	cmp	r3, #0
- 80096f2:	d00c      	beq.n	800970e <_Z15publishInputPinv+0x6e>
+ 80096f2:	d00c      	beq.n	800970e <_Z19publishDigitalInputv+0x6e>
 	{
 		pin = 2;
  80096f4:	2302      	movs	r3, #2
  80096f6:	607b      	str	r3, [r7, #4]
 		signal = IP2;
  80096f8:	f44f 5100 	mov.w	r1, #8192	; 0x2000
- 80096fc:	489c      	ldr	r0, [pc, #624]	; (8009970 <_Z15publishInputPinv+0x2d0>)
+ 80096fc:	489c      	ldr	r0, [pc, #624]	; (8009970 <_Z19publishDigitalInputv+0x2d0>)
  80096fe:	f7f7 fac9 	bl	8000c94 <GPIO_ReadInputDataBit>
  8009702:	4603      	mov	r3, r0
  8009704:	2b00      	cmp	r3, #0
@@ -21802,7 +21802,7 @@ void publishInputPin()
 	}
 	if (!IP3)
  800970e:	f44f 4180 	mov.w	r1, #16384	; 0x4000
- 8009712:	4897      	ldr	r0, [pc, #604]	; (8009970 <_Z15publishInputPinv+0x2d0>)
+ 8009712:	4897      	ldr	r0, [pc, #604]	; (8009970 <_Z19publishDigitalInputv+0x2d0>)
  8009714:	f7f7 fabe 	bl	8000c94 <GPIO_ReadInputDataBit>
  8009718:	4603      	mov	r3, r0
  800971a:	2b00      	cmp	r3, #0
@@ -21811,14 +21811,14 @@ void publishInputPin()
  8009720:	2300      	movne	r3, #0
  8009722:	b2db      	uxtb	r3, r3
  8009724:	2b00      	cmp	r3, #0
- 8009726:	d00c      	beq.n	8009742 <_Z15publishInputPinv+0xa2>
+ 8009726:	d00c      	beq.n	8009742 <_Z19publishDigitalInputv+0xa2>
 	{
 		pin = 3;
  8009728:	2303      	movs	r3, #3
  800972a:	607b      	str	r3, [r7, #4]
 		signal = IP3;
  800972c:	f44f 4180 	mov.w	r1, #16384	; 0x4000
- 8009730:	488f      	ldr	r0, [pc, #572]	; (8009970 <_Z15publishInputPinv+0x2d0>)
+ 8009730:	488f      	ldr	r0, [pc, #572]	; (8009970 <_Z19publishDigitalInputv+0x2d0>)
  8009732:	f7f7 faaf 	bl	8000c94 <GPIO_ReadInputDataBit>
  8009736:	4603      	mov	r3, r0
  8009738:	2b00      	cmp	r3, #0
@@ -21829,7 +21829,7 @@ void publishInputPin()
 	}
 	if (!IP4)
  8009742:	f44f 4100 	mov.w	r1, #32768	; 0x8000
- 8009746:	488a      	ldr	r0, [pc, #552]	; (8009970 <_Z15publishInputPinv+0x2d0>)
+ 8009746:	488a      	ldr	r0, [pc, #552]	; (8009970 <_Z19publishDigitalInputv+0x2d0>)
  8009748:	f7f7 faa4 	bl	8000c94 <GPIO_ReadInputDataBit>
  800974c:	4603      	mov	r3, r0
  800974e:	2b00      	cmp	r3, #0
@@ -21838,14 +21838,14 @@ void publishInputPin()
  8009754:	2300      	movne	r3, #0
  8009756:	b2db      	uxtb	r3, r3
  8009758:	2b00      	cmp	r3, #0
- 800975a:	d00c      	beq.n	8009776 <_Z15publishInputPinv+0xd6>
+ 800975a:	d00c      	beq.n	8009776 <_Z19publishDigitalInputv+0xd6>
 	{
 		pin = 4;
  800975c:	2304      	movs	r3, #4
  800975e:	607b      	str	r3, [r7, #4]
 		signal = IP4;
  8009760:	f44f 4100 	mov.w	r1, #32768	; 0x8000
- 8009764:	4882      	ldr	r0, [pc, #520]	; (8009970 <_Z15publishInputPinv+0x2d0>)
+ 8009764:	4882      	ldr	r0, [pc, #520]	; (8009970 <_Z19publishDigitalInputv+0x2d0>)
  8009766:	f7f7 fa95 	bl	8000c94 <GPIO_ReadInputDataBit>
  800976a:	4603      	mov	r3, r0
  800976c:	2b00      	cmp	r3, #0
@@ -21856,7 +21856,7 @@ void publishInputPin()
 	}
 	if (!IP5)
  8009776:	f44f 4180 	mov.w	r1, #16384	; 0x4000
- 800977a:	487e      	ldr	r0, [pc, #504]	; (8009974 <_Z15publishInputPinv+0x2d4>)
+ 800977a:	487e      	ldr	r0, [pc, #504]	; (8009974 <_Z19publishDigitalInputv+0x2d4>)
  800977c:	f7f7 fa8a 	bl	8000c94 <GPIO_ReadInputDataBit>
  8009780:	4603      	mov	r3, r0
  8009782:	2b00      	cmp	r3, #0
@@ -21865,14 +21865,14 @@ void publishInputPin()
  8009788:	2300      	movne	r3, #0
  800978a:	b2db      	uxtb	r3, r3
  800978c:	2b00      	cmp	r3, #0
- 800978e:	d00c      	beq.n	80097aa <_Z15publishInputPinv+0x10a>
+ 800978e:	d00c      	beq.n	80097aa <_Z19publishDigitalInputv+0x10a>
 	{
 		pin = 5;
  8009790:	2305      	movs	r3, #5
  8009792:	607b      	str	r3, [r7, #4]
 		signal = IP5;
  8009794:	f44f 4180 	mov.w	r1, #16384	; 0x4000
- 8009798:	4876      	ldr	r0, [pc, #472]	; (8009974 <_Z15publishInputPinv+0x2d4>)
+ 8009798:	4876      	ldr	r0, [pc, #472]	; (8009974 <_Z19publishDigitalInputv+0x2d4>)
  800979a:	f7f7 fa7b 	bl	8000c94 <GPIO_ReadInputDataBit>
  800979e:	4603      	mov	r3, r0
  80097a0:	2b00      	cmp	r3, #0
@@ -21883,7 +21883,7 @@ void publishInputPin()
 	}
 	if (!IP6)
  80097aa:	f44f 4100 	mov.w	r1, #32768	; 0x8000
- 80097ae:	4871      	ldr	r0, [pc, #452]	; (8009974 <_Z15publishInputPinv+0x2d4>)
+ 80097ae:	4871      	ldr	r0, [pc, #452]	; (8009974 <_Z19publishDigitalInputv+0x2d4>)
  80097b0:	f7f7 fa70 	bl	8000c94 <GPIO_ReadInputDataBit>
  80097b4:	4603      	mov	r3, r0
  80097b6:	2b00      	cmp	r3, #0
@@ -21892,14 +21892,14 @@ void publishInputPin()
  80097bc:	2300      	movne	r3, #0
  80097be:	b2db      	uxtb	r3, r3
  80097c0:	2b00      	cmp	r3, #0
- 80097c2:	d00c      	beq.n	80097de <_Z15publishInputPinv+0x13e>
+ 80097c2:	d00c      	beq.n	80097de <_Z19publishDigitalInputv+0x13e>
 	{
 		pin = 6;
  80097c4:	2306      	movs	r3, #6
  80097c6:	607b      	str	r3, [r7, #4]
 		signal = IP6;
  80097c8:	f44f 4100 	mov.w	r1, #32768	; 0x8000
- 80097cc:	4869      	ldr	r0, [pc, #420]	; (8009974 <_Z15publishInputPinv+0x2d4>)
+ 80097cc:	4869      	ldr	r0, [pc, #420]	; (8009974 <_Z19publishDigitalInputv+0x2d4>)
  80097ce:	f7f7 fa61 	bl	8000c94 <GPIO_ReadInputDataBit>
  80097d2:	4603      	mov	r3, r0
  80097d4:	2b00      	cmp	r3, #0
@@ -21910,7 +21910,7 @@ void publishInputPin()
 	}
 	if (!IP7)
  80097de:	f44f 6180 	mov.w	r1, #1024	; 0x400
- 80097e2:	4865      	ldr	r0, [pc, #404]	; (8009978 <_Z15publishInputPinv+0x2d8>)
+ 80097e2:	4865      	ldr	r0, [pc, #404]	; (8009978 <_Z19publishDigitalInputv+0x2d8>)
  80097e4:	f7f7 fa56 	bl	8000c94 <GPIO_ReadInputDataBit>
  80097e8:	4603      	mov	r3, r0
  80097ea:	2b00      	cmp	r3, #0
@@ -21919,14 +21919,14 @@ void publishInputPin()
  80097f0:	2300      	movne	r3, #0
  80097f2:	b2db      	uxtb	r3, r3
  80097f4:	2b00      	cmp	r3, #0
- 80097f6:	d00c      	beq.n	8009812 <_Z15publishInputPinv+0x172>
+ 80097f6:	d00c      	beq.n	8009812 <_Z19publishDigitalInputv+0x172>
 	{
 		pin = 7;
  80097f8:	2307      	movs	r3, #7
  80097fa:	607b      	str	r3, [r7, #4]
 		signal = IP7;
  80097fc:	f44f 6180 	mov.w	r1, #1024	; 0x400
- 8009800:	485d      	ldr	r0, [pc, #372]	; (8009978 <_Z15publishInputPinv+0x2d8>)
+ 8009800:	485d      	ldr	r0, [pc, #372]	; (8009978 <_Z19publishDigitalInputv+0x2d8>)
  8009802:	f7f7 fa47 	bl	8000c94 <GPIO_ReadInputDataBit>
  8009806:	4603      	mov	r3, r0
  8009808:	2b00      	cmp	r3, #0
@@ -21937,7 +21937,7 @@ void publishInputPin()
 	}
 	if (!IP8)
  8009812:	f44f 6100 	mov.w	r1, #2048	; 0x800
- 8009816:	4858      	ldr	r0, [pc, #352]	; (8009978 <_Z15publishInputPinv+0x2d8>)
+ 8009816:	4858      	ldr	r0, [pc, #352]	; (8009978 <_Z19publishDigitalInputv+0x2d8>)
  8009818:	f7f7 fa3c 	bl	8000c94 <GPIO_ReadInputDataBit>
  800981c:	4603      	mov	r3, r0
  800981e:	2b00      	cmp	r3, #0
@@ -21946,14 +21946,14 @@ void publishInputPin()
  8009824:	2300      	movne	r3, #0
  8009826:	b2db      	uxtb	r3, r3
  8009828:	2b00      	cmp	r3, #0
- 800982a:	d00c      	beq.n	8009846 <_Z15publishInputPinv+0x1a6>
+ 800982a:	d00c      	beq.n	8009846 <_Z19publishDigitalInputv+0x1a6>
 	{
 		pin = 8;
  800982c:	2308      	movs	r3, #8
  800982e:	607b      	str	r3, [r7, #4]
 		signal = IP8;
  8009830:	f44f 6100 	mov.w	r1, #2048	; 0x800
- 8009834:	4850      	ldr	r0, [pc, #320]	; (8009978 <_Z15publishInputPinv+0x2d8>)
+ 8009834:	4850      	ldr	r0, [pc, #320]	; (8009978 <_Z19publishDigitalInputv+0x2d8>)
  8009836:	f7f7 fa2d 	bl	8000c94 <GPIO_ReadInputDataBit>
  800983a:	4603      	mov	r3, r0
  800983c:	2b00      	cmp	r3, #0
@@ -21964,7 +21964,7 @@ void publishInputPin()
 	}
 	if (!IP9)
  8009846:	f44f 7180 	mov.w	r1, #256	; 0x100
- 800984a:	484c      	ldr	r0, [pc, #304]	; (800997c <_Z15publishInputPinv+0x2dc>)
+ 800984a:	484c      	ldr	r0, [pc, #304]	; (800997c <_Z19publishDigitalInputv+0x2dc>)
  800984c:	f7f7 fa22 	bl	8000c94 <GPIO_ReadInputDataBit>
  8009850:	4603      	mov	r3, r0
  8009852:	2b00      	cmp	r3, #0
@@ -21973,14 +21973,14 @@ void publishInputPin()
  8009858:	2300      	movne	r3, #0
  800985a:	b2db      	uxtb	r3, r3
  800985c:	2b00      	cmp	r3, #0
- 800985e:	d00c      	beq.n	800987a <_Z15publishInputPinv+0x1da>
+ 800985e:	d00c      	beq.n	800987a <_Z19publishDigitalInputv+0x1da>
 	{
 		pin = 9;
  8009860:	2309      	movs	r3, #9
  8009862:	607b      	str	r3, [r7, #4]
 		signal = IP9;
  8009864:	f44f 7180 	mov.w	r1, #256	; 0x100
- 8009868:	4844      	ldr	r0, [pc, #272]	; (800997c <_Z15publishInputPinv+0x2dc>)
+ 8009868:	4844      	ldr	r0, [pc, #272]	; (800997c <_Z19publishDigitalInputv+0x2dc>)
  800986a:	f7f7 fa13 	bl	8000c94 <GPIO_ReadInputDataBit>
  800986e:	4603      	mov	r3, r0
  8009870:	2b00      	cmp	r3, #0
@@ -21991,7 +21991,7 @@ void publishInputPin()
 	}
 	if (!IP10)
  800987a:	f44f 6180 	mov.w	r1, #1024	; 0x400
- 800987e:	4840      	ldr	r0, [pc, #256]	; (8009980 <_Z15publishInputPinv+0x2e0>)
+ 800987e:	4840      	ldr	r0, [pc, #256]	; (8009980 <_Z19publishDigitalInputv+0x2e0>)
  8009880:	f7f7 fa08 	bl	8000c94 <GPIO_ReadInputDataBit>
  8009884:	4603      	mov	r3, r0
  8009886:	2b00      	cmp	r3, #0
@@ -22000,14 +22000,14 @@ void publishInputPin()
  800988c:	2300      	movne	r3, #0
  800988e:	b2db      	uxtb	r3, r3
  8009890:	2b00      	cmp	r3, #0
- 8009892:	d00c      	beq.n	80098ae <_Z15publishInputPinv+0x20e>
+ 8009892:	d00c      	beq.n	80098ae <_Z19publishDigitalInputv+0x20e>
 	{
 		pin = 10;
  8009894:	230a      	movs	r3, #10
  8009896:	607b      	str	r3, [r7, #4]
 		signal = IP10;
  8009898:	f44f 6180 	mov.w	r1, #1024	; 0x400
- 800989c:	4838      	ldr	r0, [pc, #224]	; (8009980 <_Z15publishInputPinv+0x2e0>)
+ 800989c:	4838      	ldr	r0, [pc, #224]	; (8009980 <_Z19publishDigitalInputv+0x2e0>)
  800989e:	f7f7 f9f9 	bl	8000c94 <GPIO_ReadInputDataBit>
  80098a2:	4603      	mov	r3, r0
  80098a4:	2b00      	cmp	r3, #0
@@ -22018,7 +22018,7 @@ void publishInputPin()
 	}
 	if (!IP11)
  80098ae:	2108      	movs	r1, #8
- 80098b0:	4831      	ldr	r0, [pc, #196]	; (8009978 <_Z15publishInputPinv+0x2d8>)
+ 80098b0:	4831      	ldr	r0, [pc, #196]	; (8009978 <_Z19publishDigitalInputv+0x2d8>)
  80098b2:	f7f7 f9ef 	bl	8000c94 <GPIO_ReadInputDataBit>
  80098b6:	4603      	mov	r3, r0
  80098b8:	2b00      	cmp	r3, #0
@@ -22027,14 +22027,14 @@ void publishInputPin()
  80098be:	2300      	movne	r3, #0
  80098c0:	b2db      	uxtb	r3, r3
  80098c2:	2b00      	cmp	r3, #0
- 80098c4:	d00b      	beq.n	80098de <_Z15publishInputPinv+0x23e>
+ 80098c4:	d00b      	beq.n	80098de <_Z19publishDigitalInputv+0x23e>
 	{
 		pin = 11;
  80098c6:	230b      	movs	r3, #11
  80098c8:	607b      	str	r3, [r7, #4]
 		signal = IP11;
  80098ca:	2108      	movs	r1, #8
- 80098cc:	482a      	ldr	r0, [pc, #168]	; (8009978 <_Z15publishInputPinv+0x2d8>)
+ 80098cc:	482a      	ldr	r0, [pc, #168]	; (8009978 <_Z19publishDigitalInputv+0x2d8>)
  80098ce:	f7f7 f9e1 	bl	8000c94 <GPIO_ReadInputDataBit>
  80098d2:	4603      	mov	r3, r0
  80098d4:	2b00      	cmp	r3, #0
@@ -22045,7 +22045,7 @@ void publishInputPin()
 	}
 	if (!IP12)
  80098de:	2110      	movs	r1, #16
- 80098e0:	4825      	ldr	r0, [pc, #148]	; (8009978 <_Z15publishInputPinv+0x2d8>)
+ 80098e0:	4825      	ldr	r0, [pc, #148]	; (8009978 <_Z19publishDigitalInputv+0x2d8>)
  80098e2:	f7f7 f9d7 	bl	8000c94 <GPIO_ReadInputDataBit>
  80098e6:	4603      	mov	r3, r0
  80098e8:	2b00      	cmp	r3, #0
@@ -22054,14 +22054,14 @@ void publishInputPin()
  80098ee:	2300      	movne	r3, #0
  80098f0:	b2db      	uxtb	r3, r3
  80098f2:	2b00      	cmp	r3, #0
- 80098f4:	d00b      	beq.n	800990e <_Z15publishInputPinv+0x26e>
+ 80098f4:	d00b      	beq.n	800990e <_Z19publishDigitalInputv+0x26e>
 	{
 		pin = 12;
  80098f6:	230c      	movs	r3, #12
  80098f8:	607b      	str	r3, [r7, #4]
 		signal = IP12;
  80098fa:	2110      	movs	r1, #16
- 80098fc:	481e      	ldr	r0, [pc, #120]	; (8009978 <_Z15publishInputPinv+0x2d8>)
+ 80098fc:	481e      	ldr	r0, [pc, #120]	; (8009978 <_Z19publishDigitalInputv+0x2d8>)
  80098fe:	f7f7 f9c9 	bl	8000c94 <GPIO_ReadInputDataBit>
  8009902:	4603      	mov	r3, r0
  8009904:	2b00      	cmp	r3, #0
@@ -22072,7 +22072,7 @@ void publishInputPin()
 	}
 	if (!IP13)
  800990e:	2180      	movs	r1, #128	; 0x80
- 8009910:	4819      	ldr	r0, [pc, #100]	; (8009978 <_Z15publishInputPinv+0x2d8>)
+ 8009910:	4819      	ldr	r0, [pc, #100]	; (8009978 <_Z19publishDigitalInputv+0x2d8>)
  8009912:	f7f7 f9bf 	bl	8000c94 <GPIO_ReadInputDataBit>
  8009916:	4603      	mov	r3, r0
  8009918:	2b00      	cmp	r3, #0
@@ -22081,14 +22081,14 @@ void publishInputPin()
  800991e:	2300      	movne	r3, #0
  8009920:	b2db      	uxtb	r3, r3
  8009922:	2b00      	cmp	r3, #0
- 8009924:	d00b      	beq.n	800993e <_Z15publishInputPinv+0x29e>
+ 8009924:	d00b      	beq.n	800993e <_Z19publishDigitalInputv+0x29e>
 	{
 		pin = 13;
  8009926:	230d      	movs	r3, #13
  8009928:	607b      	str	r3, [r7, #4]
 		signal = IP13;
  800992a:	2180      	movs	r1, #128	; 0x80
- 800992c:	4812      	ldr	r0, [pc, #72]	; (8009978 <_Z15publishInputPinv+0x2d8>)
+ 800992c:	4812      	ldr	r0, [pc, #72]	; (8009978 <_Z19publishDigitalInputv+0x2d8>)
  800992e:	f7f7 f9b1 	bl	8000c94 <GPIO_ReadInputDataBit>
  8009932:	4603      	mov	r3, r0
  8009934:	2b00      	cmp	r3, #0
@@ -22099,7 +22099,7 @@ void publishInputPin()
 	}
 	if (!IP14)
  800993e:	2120      	movs	r1, #32
- 8009940:	480c      	ldr	r0, [pc, #48]	; (8009974 <_Z15publishInputPinv+0x2d4>)
+ 8009940:	480c      	ldr	r0, [pc, #48]	; (8009974 <_Z19publishDigitalInputv+0x2d4>)
  8009942:	f7f7 f9a7 	bl	8000c94 <GPIO_ReadInputDataBit>
  8009946:	4603      	mov	r3, r0
  8009948:	2b00      	cmp	r3, #0
@@ -22108,14 +22108,14 @@ void publishInputPin()
  800994e:	2300      	movne	r3, #0
  8009950:	b2db      	uxtb	r3, r3
  8009952:	2b00      	cmp	r3, #0
- 8009954:	d016      	beq.n	8009984 <_Z15publishInputPinv+0x2e4>
+ 8009954:	d016      	beq.n	8009984 <_Z19publishDigitalInputv+0x2e4>
 	{
 		pin = 14;
  8009956:	230e      	movs	r3, #14
  8009958:	607b      	str	r3, [r7, #4]
 		signal = IP14;
  800995a:	2120      	movs	r1, #32
- 800995c:	4805      	ldr	r0, [pc, #20]	; (8009974 <_Z15publishInputPinv+0x2d4>)
+ 800995c:	4805      	ldr	r0, [pc, #20]	; (8009974 <_Z19publishDigitalInputv+0x2d4>)
  800995e:	f7f7 f999 	bl	8000c94 <GPIO_ReadInputDataBit>
  8009962:	4603      	mov	r3, r0
  8009964:	2b00      	cmp	r3, #0
@@ -22123,7 +22123,7 @@ void publishInputPin()
  8009968:	2301      	movne	r3, #1
  800996a:	2300      	moveq	r3, #0
  800996c:	70fb      	strb	r3, [r7, #3]
- 800996e:	e009      	b.n	8009984 <_Z15publishInputPinv+0x2e4>
+ 800996e:	e009      	b.n	8009984 <_Z19publishDigitalInputv+0x2e4>
  8009970:	40021000 	.word	0x40021000
  8009974:	40020400 	.word	0x40020400
  8009978:	40020c00 	.word	0x40020c00
@@ -22132,7 +22132,7 @@ void publishInputPin()
 	}
 	if (!IP15)
  8009984:	2140      	movs	r1, #64	; 0x40
- 8009986:	4812      	ldr	r0, [pc, #72]	; (80099d0 <_Z15publishInputPinv+0x330>)
+ 8009986:	4812      	ldr	r0, [pc, #72]	; (80099d0 <_Z19publishDigitalInputv+0x330>)
  8009988:	f7f7 f984 	bl	8000c94 <GPIO_ReadInputDataBit>
  800998c:	4603      	mov	r3, r0
  800998e:	2b00      	cmp	r3, #0
@@ -22141,14 +22141,14 @@ void publishInputPin()
  8009994:	2300      	movne	r3, #0
  8009996:	b2db      	uxtb	r3, r3
  8009998:	2b00      	cmp	r3, #0
- 800999a:	d00b      	beq.n	80099b4 <_Z15publishInputPinv+0x314>
+ 800999a:	d00b      	beq.n	80099b4 <_Z19publishDigitalInputv+0x314>
 	{
 		pin = 15;
  800999c:	230f      	movs	r3, #15
  800999e:	607b      	str	r3, [r7, #4]
 		signal = IP15;
  80099a0:	2140      	movs	r1, #64	; 0x40
- 80099a2:	480b      	ldr	r0, [pc, #44]	; (80099d0 <_Z15publishInputPinv+0x330>)
+ 80099a2:	480b      	ldr	r0, [pc, #44]	; (80099d0 <_Z19publishDigitalInputv+0x330>)
  80099a4:	f7f7 f976 	bl	8000c94 <GPIO_ReadInputDataBit>
  80099a8:	4603      	mov	r3, r0
  80099aa:	2b00      	cmp	r3, #0
@@ -22158,17 +22158,17 @@ void publishInputPin()
  80099b2:	70fb      	strb	r3, [r7, #3]
 	}
 
-	ip_msg.pin = pin;
- 80099b4:	4a07      	ldr	r2, [pc, #28]	; (80099d4 <_Z15publishInputPinv+0x334>)
+	dinp_msg.pin = pin;
+ 80099b4:	4a07      	ldr	r2, [pc, #28]	; (80099d4 <_Z19publishDigitalInputv+0x334>)
  80099b6:	687b      	ldr	r3, [r7, #4]
  80099b8:	6053      	str	r3, [r2, #4]
-	ip_msg.signal = signal;
- 80099ba:	4a06      	ldr	r2, [pc, #24]	; (80099d4 <_Z15publishInputPinv+0x334>)
+	dinp_msg.signal = signal;
+ 80099ba:	4a06      	ldr	r2, [pc, #24]	; (80099d4 <_Z19publishDigitalInputv+0x334>)
  80099bc:	78fb      	ldrb	r3, [r7, #3]
  80099be:	7213      	strb	r3, [r2, #8]
-	ip_pub.publish(&ip_msg);
- 80099c0:	4904      	ldr	r1, [pc, #16]	; (80099d4 <_Z15publishInputPinv+0x334>)
- 80099c2:	4805      	ldr	r0, [pc, #20]	; (80099d8 <_Z15publishInputPinv+0x338>)
+	dinp_pub.publish(&dinp_msg);
+ 80099c0:	4904      	ldr	r1, [pc, #16]	; (80099d4 <_Z19publishDigitalInputv+0x334>)
+ 80099c2:	4805      	ldr	r0, [pc, #20]	; (80099d8 <_Z19publishDigitalInputv+0x338>)
  80099c4:	f7fe ff9d 	bl	8008902 <_ZN3ros9Publisher7publishEPKNS_3MsgE>
 }
  80099c8:	bf00      	nop
@@ -22322,7 +22322,7 @@ class NodeHandleBase_
  8009ab4:	46bd      	mov	sp, r7
  8009ab6:	f85d 7b04 	ldr.w	r7, [sp], #4
  8009aba:	4770      	bx	lr
- 8009abc:	0800b5e8 	.word	0x0800b5e8
+ 8009abc:	0800b5f0 	.word	0x0800b5f0
 
 08009ac0 <_ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi1024ELi1024EEC1Ev>:
 
@@ -22465,7 +22465,7 @@ public:
  8009bb2:	3718      	adds	r7, #24
  8009bb4:	46bd      	mov	sp, r7
  8009bb6:	bd80      	pop	{r7, pc}
- 8009bb8:	0800b544 	.word	0x0800b544
+ 8009bb8:	0800b54c 	.word	0x0800b54c
 
 08009bbc <_ZN3ros11Subscriber_C1Ev>:
 
@@ -22487,7 +22487,7 @@ class Subscriber_
  8009bd0:	46bd      	mov	sp, r7
  8009bd2:	f85d 7b04 	ldr.w	r7, [sp], #4
  8009bd6:	4770      	bx	lr
- 8009bd8:	0800b5d0 	.word	0x0800b5d0
+ 8009bd8:	0800b5d8 	.word	0x0800b5d8
 
 08009bdc <_ZN3ros10SubscriberIN11utmrbc_msgs3LEDEvEC1EPKcPFvRKS2_Ei>:
 {
@@ -22533,7 +22533,7 @@ public:
  8009c1a:	46bd      	mov	sp, r7
  8009c1c:	bd80      	pop	{r7, pc}
  8009c1e:	bf00      	nop
- 8009c20:	0800b52c 	.word	0x0800b52c
+ 8009c20:	0800b534 	.word	0x0800b534
 
 08009c24 <_ZN3ros10SubscriberIN11utmrbc_msgs3BDCEvEC1EPKcPFvRKS2_Ei>:
   Subscriber(const char * topic_name, CallbackT cb, int endpoint = rosserial_msgs::TopicInfo::ID_SUBSCRIBER) :
@@ -22572,7 +22572,7 @@ public:
  8009c62:	46bd      	mov	sp, r7
  8009c64:	bd80      	pop	{r7, pc}
  8009c66:	bf00      	nop
- 8009c68:	0800b514 	.word	0x0800b514
+ 8009c68:	0800b51c 	.word	0x0800b51c
 
 08009c6c <_ZN3ros10SubscriberIN11utmrbc_msgs4HSPMEvEC1EPKcPFvRKS2_Ei>:
   Subscriber(const char * topic_name, CallbackT cb, int endpoint = rosserial_msgs::TopicInfo::ID_SUBSCRIBER) :
@@ -22611,7 +22611,7 @@ public:
  8009caa:	46bd      	mov	sp, r7
  8009cac:	bd80      	pop	{r7, pc}
  8009cae:	bf00      	nop
- 8009cb0:	0800b4fc 	.word	0x0800b4fc
+ 8009cb0:	0800b504 	.word	0x0800b504
 
 08009cb4 <_ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi1024ELi1024EE8spinOnceEv>:
   /* This function goes in your loop() function, it handles
@@ -23944,7 +23944,7 @@ public:
  800a62e:	46bd      	mov	sp, r7
  800a630:	bd80      	pop	{r7, pc}
  800a632:	bf00      	nop
- 800a634:	0800b480 	.word	0x0800b480
+ 800a634:	0800b484 	.word	0x0800b484
 
 0800a638 <_ZN3ros11NodeHandle_I13STM32HardwareLi25ELi25ELi1024ELi1024EE6setNowERNS_4TimeE>:
   void setNow(Time & new_now)
@@ -24118,10 +24118,10 @@ ros::Publisher info_pub("mb/info", &info_msg);
  800a764:	4915      	ldr	r1, [pc, #84]	; (800a7bc <_Z41__static_initialization_and_destruction_0ii+0xb4>)
  800a766:	4816      	ldr	r0, [pc, #88]	; (800a7c0 <_Z41__static_initialization_and_destruction_0ii+0xb8>)
  800a768:	f7fe f8b4 	bl	80088d4 <_ZN3ros9PublisherC1EPKcPNS_3MsgEi>
-utmrbc_msgs::InputPin ip_msg;
+utmrbc_msgs::DigitalInput dinp_msg;
  800a76c:	4815      	ldr	r0, [pc, #84]	; (800a7c4 <_Z41__static_initialization_and_destruction_0ii+0xbc>)
- 800a76e:	f7fe fac7 	bl	8008d00 <_ZN11utmrbc_msgs8InputPinC1Ev>
-ros::Publisher ip_pub("ip", &ip_msg);
+ 800a76e:	f7fe fac7 	bl	8008d00 <_ZN11utmrbc_msgs12DigitalInputC1Ev>
+ros::Publisher dinp_pub("dinp", &dinp_msg);
  800a772:	2300      	movs	r3, #0
  800a774:	4a13      	ldr	r2, [pc, #76]	; (800a7c4 <_Z41__static_initialization_and_destruction_0ii+0xbc>)
  800a776:	4914      	ldr	r1, [pc, #80]	; (800a7c8 <_Z41__static_initialization_and_destruction_0ii+0xc0>)
@@ -24137,19 +24137,19 @@ ros::Publisher ip_pub("ip", &ip_msg);
  800a78c:	20001408 	.word	0x20001408
  800a790:	20001d3c 	.word	0x20001d3c
  800a794:	080092fd 	.word	0x080092fd
- 800a798:	0800b4bc 	.word	0x0800b4bc
+ 800a798:	0800b4c0 	.word	0x0800b4c0
  800a79c:	20001d48 	.word	0x20001d48
  800a7a0:	0800939d 	.word	0x0800939d
- 800a7a4:	0800b4c0 	.word	0x0800b4c0
+ 800a7a4:	0800b4c4 	.word	0x0800b4c4
  800a7a8:	20001d68 	.word	0x20001d68
  800a7ac:	08009485 	.word	0x08009485
- 800a7b0:	0800b4c4 	.word	0x0800b4c4
+ 800a7b0:	0800b4c8 	.word	0x0800b4c8
  800a7b4:	20001d88 	.word	0x20001d88
  800a7b8:	20001e70 	.word	0x20001e70
- 800a7bc:	0800b4cc 	.word	0x0800b4cc
+ 800a7bc:	0800b4d0 	.word	0x0800b4d0
  800a7c0:	20001e78 	.word	0x20001e78
  800a7c4:	20001e8c 	.word	0x20001e8c
- 800a7c8:	0800b4d4 	.word	0x0800b4d4
+ 800a7c8:	0800b4d8 	.word	0x0800b4d8
  800a7cc:	20001e98 	.word	0x20001e98
 
 0800a7d0 <_ZN3ros10SubscriberIN11utmrbc_msgs4HSPMEvE8callbackEPh>:
@@ -24546,7 +24546,7 @@ LoopFillZerobss:
   ldr   sp, =_estack    /* Atollic update: set stack pointer */
  800a9f8:	20020000 	.word	0x20020000
   ldr  r3, =_sidata
- 800a9fc:	0800b678 	.word	0x0800b678
+ 800a9fc:	0800b680 	.word	0x0800b680
   ldr  r0, =_sdata
  800aa00:	20000000 	.word	0x20000000
   ldr  r3, =_edata
@@ -25601,10 +25601,10 @@ int siprintf(char *buf, const char *fmt, ...)
  800afa2:	4798      	blx	r3
  800afa4:	3501      	adds	r5, #1
  800afa6:	e7f2      	b.n	800af8e <__libc_init_array+0x1e>
- 800afa8:	0800b66c 	.word	0x0800b66c
- 800afac:	0800b66c 	.word	0x0800b66c
- 800afb0:	0800b66c 	.word	0x0800b66c
- 800afb4:	0800b674 	.word	0x0800b674
+ 800afa8:	0800b674 	.word	0x0800b674
+ 800afac:	0800b674 	.word	0x0800b674
+ 800afb0:	0800b674 	.word	0x0800b674
+ 800afb4:	0800b67c 	.word	0x0800b67c
 
 0800afb8 <memcpy>:
  800afb8:	b510      	push	{r4, lr}
