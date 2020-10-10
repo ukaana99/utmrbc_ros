@@ -1,0 +1,23 @@
+<package format="2">
+  <name>bot1_description_real</name>
+  <version>1.0.0</version>
+  <description>
+    <p>URDF Description package for bot1_description_real</p>
+    <p>This package contains configuration data, 3D models and launch files
+for bot1_description_real robot</p>
+  </description>
+  <author>TODO</author>
+  <maintainer email="TODO@email.com" />
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roslaunch</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>rviz</depend>
+  <depend>joint_state_publisher</depend>
+  <depend>gazebo</depend>
+  <depend>urdf</depend>
+  <depend>xacro</depend>
+  <export>
+    <architecture_independent />
+  </export>
+</package>

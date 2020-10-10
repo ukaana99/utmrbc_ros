@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="bot1_description_real">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.479691730370429 0.588225410102534 0.571810670717185"
+        rpy="0 0 0" />
+      <mass
+        value="20.699196395585" />
+      <inertia
+        ixx="0.0804877701808731"
+        ixy="-2.88375061858065E-05"
+        ixz="-5.11896008022177E-05"
+        iyy="0.170897838679803"
+        iyz="-0.000564030677199464"
+        izz="0.112039072409918" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_real/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_real/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
