@@ -1,0 +1,5 @@
+state.c:28:6:STTStateInit	4	static
+state.c:33:6:STTEventChecker	8	static
+state.c:73:6:STTStop	8	static
+state.c:79:6:STTPendingStateVelocity	8	static
+state.c:92:6:STTVelocityStateVelocity	8	static

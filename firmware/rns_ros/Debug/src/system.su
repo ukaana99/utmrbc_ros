@@ -1,0 +1,4 @@
+system.c:18:6:SYSSystemInit	16	static
+system.c:61:6:SYSSystem5ms	24	static
+system.c:106:6:SYSSystemInfiniteLoop	4	static
+system.c:111:6:SYSSystemAct	4	static

@@ -1,0 +1,2 @@
+shiftreg.c:30:6:SHIFTREGInit	32	static
+shiftreg.c:59:6:SHIFTREGShift	24	static

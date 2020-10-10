@@ -1,0 +1,3 @@
+common.c:9:6:System_Start	4	static
+common.c:26:6:System_Run	4	static
+common.c:31:6:RNS_config	16	static

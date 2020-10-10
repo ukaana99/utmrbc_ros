@@ -1,52 +1,57 @@
 {
-  "configurations": [
-    {
-      "browse": {
-        "databaseFilename": "",
-        "limitSymbolsToIncludedHeaders": true
-      },
-      "includePath": [
-        "/home/lag/catkin_ws/devel/include/**",
-        "/opt/ros/kinetic/include/**",
-        "/home/lag/catkin_ws/src/bot0_description/include/**",
-        "/home/lag/catkin_ws/src/utmrbc_ros/bot1_simulations/bot1_fake/include/**",
-        "/home/lag/catkin_ws/src/utmrbc_ros/bot1_simulations/bot1_gazebo/include/**",
-        "/home/lag/catkin_ws/src/utmrbc_ros/bot1/bot1_slam/include/**",
-        "/home/lag/catkin_ws/src/vision_opencv/cv_bridge/include/**",
-        "/home/lag/catkin_ws/src/image_pipeline/depth_image_proc/include/**",
-        "/home/lag/catkin_ws/src/hls_lfcd_lds_driver/include/**",
-        "/home/lag/catkin_ws/src/vision_opencv/image_geometry/include/**",
-        "/home/lag/catkin_ws/src/image_pipeline/image_proc/include/**",
-        "/home/lag/catkin_ws/src/kobuki/kobuki_auto_docking/include/**",
-        "/home/lag/catkin_ws/src/kobuki/kobuki_bumper2pc/include/**",
-        "/home/lag/catkin_ws/src/kobuki/kobuki_controller_tutorial/include/**",
-        "/home/lag/catkin_ws/src/kobuki/kobuki_keyop/include/**",
-        "/home/lag/catkin_ws/src/kobuki/kobuki_node/include/**",
-        "/home/lag/catkin_ws/src/kobuki/kobuki_random_walker/include/**",
-        "/home/lag/catkin_ws/src/kobuki/kobuki_safety_controller/include/**",
-        "/home/lag/catkin_ws/src/openni_camera/openni_camera/include/**",
-        "/home/lag/catkin_ws/src/perception_pcl/pcl_ros/include/**",
-        "/home/lag/catkin_ws/src/utmrbc_ros/robocon20_simulations/robocon20_fake/include/**",
-        "/home/lag/catkin_ws/src/utmrbc_ros/robocon20_simulations/robocon20_gazebo/include/**",
-        "/home/lag/catkin_ws/src/nhk2015_back_ros/robominton/include/**",
-        "/home/lag/catkin_ws/src/RoboRTS/roborts_common/include/**",
-        "/home/lag/catkin_ws/src/RoboRTS/roborts_costmap/include/**",
-        "/home/lag/catkin_ws/src/robot_pose_ekf/include/**",
-        "/home/lag/catkin_ws/src/rosbot_webui/include/**",
-        "/home/lag/catkin_ws/src/rosserial/rosserial_server/include/**",
-        "/home/lag/catkin_ws/src/rosserial/rosserial_test/include/**",
-        "/home/lag/catkin_ws/src/nhk2015_back_ros/shuttle_finder/include/**",
-        "/home/lag/catkin_ws/src/image_pipeline/stereo_image_proc/include/**",
-        "/home/lag/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
-        "/home/lag/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
-        "/home/lag/catkin_ws/src/turtlebot3_applications/turtlebot3_panorama/include/**",
-        "/home/lag/catkin_ws/src/turtlebot3/turtlebot3_slam/include/**",
-        "/home/lag/catkin_ws/src/ros_tutorials/turtlesim/include/**",
-        "/home/lag/catkin_ws/src/usb_cam/include/**",
-        "/home/lag/catkin_ws/src/web_video_server/include/**",
-        "/usr/include/**"
-      ],
-      "name": "ROS"
-    }
-  ]
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/lag/catkin_ws/devel/include/**",
+                "/opt/ros/kinetic/include/**",
+                "/home/lag/catkin_ws/src/bot0_description/include/**",
+                "/home/lag/catkin_ws/src/utmrbc_ros/bot1_simulations/bot1_fake/include/**",
+                "/home/lag/catkin_ws/src/utmrbc_ros/bot1_simulations/bot1_gazebo/include/**",
+                "/home/lag/catkin_ws/src/utmrbc_ros/bot1/bot1_slam/include/**",
+                "/home/lag/catkin_ws/src/vision_opencv/cv_bridge/include/**",
+                "/home/lag/catkin_ws/src/image_pipeline/depth_image_proc/include/**",
+                "/home/lag/catkin_ws/src/hls_lfcd_lds_driver/include/**",
+                "/home/lag/catkin_ws/src/vision_opencv/image_geometry/include/**",
+                "/home/lag/catkin_ws/src/image_pipeline/image_proc/include/**",
+                "/home/lag/catkin_ws/src/kobuki/kobuki_auto_docking/include/**",
+                "/home/lag/catkin_ws/src/kobuki/kobuki_bumper2pc/include/**",
+                "/home/lag/catkin_ws/src/kobuki/kobuki_controller_tutorial/include/**",
+                "/home/lag/catkin_ws/src/kobuki/kobuki_keyop/include/**",
+                "/home/lag/catkin_ws/src/kobuki/kobuki_node/include/**",
+                "/home/lag/catkin_ws/src/kobuki/kobuki_random_walker/include/**",
+                "/home/lag/catkin_ws/src/kobuki/kobuki_safety_controller/include/**",
+                "/home/lag/catkin_ws/src/openni_camera/openni_camera/include/**",
+                "/home/lag/catkin_ws/src/perception_pcl/pcl_ros/include/**",
+                "/home/lag/catkin_ws/src/utmrbc_ros/robocon20_simulations/robocon20_fake/include/**",
+                "/home/lag/catkin_ws/src/utmrbc_ros/robocon20_simulations/robocon20_gazebo/include/**",
+                "/home/lag/catkin_ws/src/nhk2015_back_ros/robominton/include/**",
+                "/home/lag/catkin_ws/src/RoboRTS/roborts_common/include/**",
+                "/home/lag/catkin_ws/src/RoboRTS/roborts_costmap/include/**",
+                "/home/lag/catkin_ws/src/robot_pose_ekf/include/**",
+                "/home/lag/catkin_ws/src/rosbot_webui/include/**",
+                "/home/lag/catkin_ws/src/rosserial/rosserial_server/include/**",
+                "/home/lag/catkin_ws/src/rosserial/rosserial_test/include/**",
+                "/home/lag/catkin_ws/src/nhk2015_back_ros/shuttle_finder/include/**",
+                "/home/lag/catkin_ws/src/image_pipeline/stereo_image_proc/include/**",
+                "/home/lag/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+                "/home/lag/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+                "/home/lag/catkin_ws/src/turtlebot3_applications/turtlebot3_panorama/include/**",
+                "/home/lag/catkin_ws/src/turtlebot3/turtlebot3_slam/include/**",
+                "/home/lag/catkin_ws/src/ros_tutorials/turtlesim/include/**",
+                "/home/lag/catkin_ws/src/usb_cam/include/**",
+                "/home/lag/catkin_ws/src/web_video_server/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
 }

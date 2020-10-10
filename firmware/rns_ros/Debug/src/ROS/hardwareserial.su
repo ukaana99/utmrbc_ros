@@ -1,0 +1,17 @@
+ring_buffer.h:72:20:void rb_init(ring_buffer*, uint16_t, uint8_t*)	24	static
+ring_buffer.h:83:24:uint16_t rb_full_count(ring_buffer*)	24	static
+ring_buffer.h:95:19:int rb_is_full(ring_buffer*)	16	static
+ring_buffer.h:113:20:void rb_insert(ring_buffer*, uint8_t)	16	static
+ring_buffer.h:122:23:uint8_t rb_remove(ring_buffer*)	24	static
+ring_buffer.h:166:19:int rb_push_insert(ring_buffer*, uint8_t)	24	static
+ring_buffer.h:179:21:void rb_reset(ring_buffer*)	16	static
+hardwareserial.cpp:10:6:void HardwareSerial::begin(uint32_t)	16	static
+hardwareserial.cpp:21:10:uint32_t HardwareSerial::available()	16	static
+hardwareserial.cpp:34:9:uint8_t HardwareSerial::read()	16	static
+hardwareserial.cpp:48:10:uint32_t HardwareSerial::write(uint8_t)	16	static
+hardwareserial.cpp:56:6:void HardwareSerial::flush()	16	static
+hardwareserial.cpp:66:6:)	284	static
+hardwareserial.cpp:76:6:void HardwareSerial::putstr(const char*)	16	static
+hardwareserial.cpp:87:6:void USART2_IRQHandler()	16	static
+hardwareserial.cpp:96:6:void USART3_IRQHandler()	16	static
+hardwareserial.cpp:106:6:void UART4_IRQHandler()	16	static

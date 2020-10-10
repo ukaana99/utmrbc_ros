@@ -1,0 +1,4 @@
+timer.c:37:6:BIOSTIMx_Init	24	static
+timer.c:174:6:BIOSTIMx_Delayus	24	static
+timer.c:297:6:BIOSTIMx_Delay100us	24	static
+timer.c:420:6:BIOSTIMx_Delayms	24	static

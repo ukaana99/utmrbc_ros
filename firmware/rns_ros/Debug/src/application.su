@@ -1,0 +1,10 @@
+application.c:18:6:APPResetPos	8	static
+application.c:57:6:APPSet	24	static
+application.c:381:6:APPApply	16	static
+application.c:455:6:APPStart	16	static
+application.c:525:6:APPStop	8	static
+application.c:565:15:APPBusy	16	static
+application.c:586:6:APPEnquire	16	static
+application.c:756:9:APPPrintstatus	4	static
+application.c:761:6:APPPrinting	16	static
+application.c:824:9:APPFeedback	4	static

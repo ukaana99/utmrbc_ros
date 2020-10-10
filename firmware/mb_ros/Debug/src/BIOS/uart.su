@@ -1,0 +1,9 @@
+uart.c:23:6:UART1Init	32	static
+uart.c:70:6:UART2Init	32	static
+uart.c:117:6:UART3Init	32	static
+uart.c:164:6:UART4Init	32	static
+uart.c:211:6:UART5Init	32	static
+uart.c:258:6:UART6Init	32	static
+uart.c:297:6:UARTPrintChar	16	static
+uart.c:313:6:UARTPrintString	16	static
+uart.c:332:6:ReadUART	16	static

@@ -1,0 +1,2 @@
+can.c:50:9:CANx_Init	40	static
+can.c:140:9:CAN_TxMsg	56	static

@@ -1,0 +1,8 @@
+i2c.c:28:6:I2CMasterSendI	32	static
+i2c.c:112:6:I2CMasterReadI	32	static
+i2c.c:207:6:I2CMasterSendII	32	static
+i2c.c:258:6:I2CMasterReadII	24	static
+i2c.c:307:6:I2CSend	296	static
+i2c.c:349:6:I2CSendV	288	static
+i2c.c:390:10:I2CTimeoutCallback	16	static
+i2c.c:412:10:I2CGetErrorCounter	24	static

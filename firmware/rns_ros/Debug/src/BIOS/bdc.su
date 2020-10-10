@@ -1,0 +1,3 @@
+bdc.c:22:6:BDCInit	32	static
+bdc.c:61:6:WriteBDC	16	static
+bdc.c:106:6:StopBDC	16	static

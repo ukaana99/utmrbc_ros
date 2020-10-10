@@ -1,0 +1,14 @@
+qei.c:51:6:QEIInit	32	static
+qei.c:93:6:QEIPrintValueStore	152	static
+qei.c:116:6:QEIWrite	16	static
+qei.c:158:6:QEIReset	16	static
+qei.c:200:6:QEISwap	16	static
+qei.c:264:6:QEIDelay	24	static
+qei.c:284:9:QEIRead	24	static
+qei.c:328:10:QEIReadRaw	24	static
+qei.c:373:6:QEI1Init	32	static
+qei.c:419:6:QEI2Init	32	static
+qei.c:466:6:QEI3Init	32	static
+qei.c:512:6:QEI4Init	32	static
+qei.c:557:6:QEI5Init	32	static
+qei.c:603:6:QEI6Init	32	static

@@ -1,0 +1,6 @@
+KF.c:29:6:KalmanFilterInit	24	static
+KF.c:36:7:updateEstimate	32	static
+KF.c:46:6:setMeasurementError	16	static
+KF.c:51:6:setEstimateError	16	static
+KF.c:56:6:setProcessNoise	16	static
+KF.c:61:7:getKalmanGain	16	static

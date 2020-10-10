@@ -1,0 +1,7 @@
+core_cm4.h:1535:22:NVIC_SetPriority	16	static
+core_cm4.h:1662:26:SysTick_Config	16	static
+system.c:15:6:BIOSInit	8	static
+system.c:35:6:BIOSDelay	16	static
+system.c:51:6:BIOSDelayLoop	16	static
+system.c:67:6:BIOSTimingDelay_Decrement	4	static
+system.c:84:6:BIOSFPUEnable	4	static

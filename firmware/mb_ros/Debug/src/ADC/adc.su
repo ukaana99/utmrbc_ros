@@ -1,0 +1,2 @@
+adc.c:10:6:ADC_DMA_init	32	static
+adc.c:73:6:ADC_Channel_Config	32	static

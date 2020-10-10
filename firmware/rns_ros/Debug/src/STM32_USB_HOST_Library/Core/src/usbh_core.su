@@ -1,0 +1,13 @@
+usbh_core.c:128:9:USBH_Connected	16	static
+usbh_core.c:140:9:USBH_PortEnabled	16	static
+usbh_core.c:152:9:USBH_PortDisabled	16	static
+usbh_core.c:165:9:USBH_Disconnected	16	static
+usbh_core.c:185:9:USBH_SOF	16	static
+usbh_core.c:197:6:USBH_Init	24	static
+usbh_core.c:234:13:USBH_DeInit	16	static
+usbh_core.c:260:6:USBH_Process	32	static
+usbh_core.c:454:6:USBH_ErrorHandle	16	static
+usbh_core.c:479:20:USBH_HandleEnum	96	static
+usbh_core.c:674:13:USBH_HandleControl	24	static
+usbh_core.c:926:6:USB_OTG_BSP_Resume	24	static
+usbh_core.c:955:6:USB_OTG_BSP_Suspend	24	static

@@ -1,0 +1,4 @@
+adapter.c:9:6:Initialize	40	static
+adapter.c:113:6:CAN1_RX0_IRQHandler	8	static
+adapter.c:152:6:CAN2_RX1_IRQHandler	8	static
+adapter.c:193:6:CAN_PROCESS	4	static
