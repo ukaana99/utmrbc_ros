@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>utmrbc_msgs</name>
+  <version>1.0.0</version>
+  <description>
+    Message and service types: custom messages and services for bot1 packages
+  </description>
+  <maintainer email="lag@todo.todo">lag</maintainer>
+  <license>Apache 2.0</license>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <build_export_depend>message_runtime</build_export_depend>
+  <exec_depend>message_runtime</exec_depend>
+</package>
