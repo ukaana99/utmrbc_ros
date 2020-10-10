@@ -111,9 +111,11 @@ int main(void)
 		else
 		{
 			LED2 = 1;
+
 		}
 		if ((t - prev_debug_time) >= 1000 / PUBLISH_FREQUENCY)
 			ROS_Update();
+		LED3=0;
 		nh.spinOnce();
 	}
 }

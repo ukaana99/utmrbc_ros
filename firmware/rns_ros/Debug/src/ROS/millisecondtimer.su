@@ -1,3 +1,3 @@
-millisecondtimer.c:15:6:delay	24	static
-millisecondtimer.c:23:10:millis	4	static
-millisecondtimer.c:28:6:reset	4	static
+millisecondtimer.c:16:7:delay	24	static
+millisecondtimer.c:25:11:millis	4	static
+millisecondtimer.c:30:7:reset	4	static
