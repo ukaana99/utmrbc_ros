@@ -3,7 +3,7 @@
 #include <geometry_msgs/Twist.h>
 #include <sensor_msgs/Joy.h>
 #include <utmrbc_msgs/LED.h>
-#include <utmrbc_msgs/InputPin.h>
+#include <utmrbc_msgs/DigitalInput.h>
 #include <utmrbc_msgs/BDC.h>
 #include <utmrbc_msgs/HSPM.h>
 
@@ -20,7 +20,7 @@ private:
   ros::Publisher hspm_pub;
 
   ros::Subscriber ps4_sub;
-  ros::Subscriber ip_sub;
+  ros::Subscriber dinp_sub;
 
   ros::Timer timer;
 
@@ -41,7 +41,7 @@ private:
   /* flags */
 
   void PS4Callback(const sensor_msgs::Joy::ConstPtr &ps4);
-  void IPCallback(const utmrbc_msgs::InputPin::ConstPtr &ip_msg);
+  void DInpCallback(const utmrbc_msgs::DigitalInput::ConstPtr &dinp_msg);
   void timerCallback(const ros::TimerEvent &event);
   void printRaw();
 
@@ -67,7 +67,7 @@ Bot1_PS4::Bot1_PS4()
   hspm_pub = nh.advertise<utmrbc_msgs::HSPM>("hspm", 1);
 
   ps4_sub = nh.subscribe<sensor_msgs::Joy>("joy", 1, &Bot1_PS4::PS4Callback, this);
-  ip_sub = nh.subscribe<utmrbc_msgs::InputPin>("ip", 1, &Bot1_PS4::IPCallback, this);
+  dinp_sub = nh.subscribe<utmrbc_msgs::DigitalInput>("dinp", 1, &Bot1_PS4::DInpCallback, this);
 
   timer = nh.createTimer(ros::Duration(0.1), &Bot1_PS4::timerCallback, this);
   timer.stop();
@@ -136,9 +136,9 @@ void Bot1_PS4::PS4Callback(const sensor_msgs::Joy::ConstPtr &ps4)
   // Bot1_PS4::printRaw();
 }
 
-void Bot1_PS4::IPCallback(const utmrbc_msgs::InputPin::ConstPtr &ip_msg)
+void Bot1_PS4::DInpCallback(const utmrbc_msgs::DigitalInput::ConstPtr &dinp_msg)
 {
-  // ROS_INFO("ip%d triggered", ip_msg->pin);
+  // ROS_INFO("dinp%d triggered", dinp_msg->pin);
 }
 
 void Bot1_PS4::publishCommandVelocity()

@@ -5,6 +5,7 @@
 ******************************************************************************/
 uint32_t t;
 uint32_t prev_update_time = 0;
+int counter = 0;
 
 /*******************************************************************************
 * ROS NodeHandle
@@ -27,8 +28,8 @@ char buffer[200];
 std_msgs::String info_msg;
 ros::Publisher info_pub("mb/info", &info_msg);
 
-utmrbc_msgs::InputPin ip_msg;
-ros::Publisher ip_pub("ip", &ip_msg);
+utmrbc_msgs::DigitalInput dinp_msg;
+ros::Publisher dinp_pub("dinp", &dinp_msg);
 
 /*******************************************************************************
 * SoftwareTimer
@@ -85,7 +86,7 @@ void ROS_Init()
 	nh.subscribe(hspm_sub);
 
 	nh.advertise(info_pub);
-	nh.advertise(ip_pub);
+	nh.advertise(dinp_pub);
 
 	prev_update_time = millis();
 }
@@ -326,9 +327,9 @@ void publishInputPin()
 		signal = IP15;
 	}
 
-	ip_msg.pin = pin;
-	ip_msg.signal = signal;
-	ip_pub.publish(&ip_msg);
+	dinp_msg.pin = pin;
+	dinp_msg.signal = signal;
+	dinp_pub.publish(&dinp_msg);
 }
 
 /*******************************************************************************

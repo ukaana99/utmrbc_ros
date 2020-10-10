@@ -9,7 +9,8 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   LED.msg
-  InputPin.msg
+  AnalogInput.msg
+  DigitalInput.msg
   BDC.msg
   HSPM.msg
 )
