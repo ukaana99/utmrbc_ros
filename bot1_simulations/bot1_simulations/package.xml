@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>bot1_simulations</name>
+  <version>1.0.0</version>
+  <description>
+    ROS packages for the bot1 simulation (meta package)
+  </description>
+  <license>Apache 2.0</license>
+  <maintainer email="l.alhakimghani@gmail.com">Luqman</maintainer>
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>bot1_fake</exec_depend>
+  <exec_depend>bot1_gazebo</exec_depend>
+  <export><metapackage/></export>
+</package>

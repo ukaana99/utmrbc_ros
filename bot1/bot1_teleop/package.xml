@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>bot1_teleop</name>
+  <version>1.2.0</version>
+  <description>
+    Provides teleoperation using keyboard for bot1.
+  </description>
+  <license>BSD</license>
+  <maintainer email="l.alhakimghani@gmail.com">Luqman</maintainer>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>utmrbc_msgs</depend>
+  <build_depend>joy</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>joy</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>joy</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+</package>

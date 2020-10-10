@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>bot1</name>
+  <version>1.0.0</version>
+  <description>
+    ROS packages for the bot1 (meta package)
+  </description>
+  <license>Apache 2.0</license>
+  <license>BSD</license>
+  <maintainer email="l.alhakimghani@gmail.com">Luqman</maintainer>
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>bot1_bringup</exec_depend>
+  <exec_depend>bot1_description</exec_depend>
+  <exec_depend>bot1_example</exec_depend>
+  <exec_depend>bot1_navigation</exec_depend>
+  <exec_depend>bot1_slam</exec_depend>
+  <exec_depend>bot1_teleop</exec_depend>
+  <export><metapackage/></export>
+</package>

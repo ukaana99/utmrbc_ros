@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>bot1_description</name>
+  <version>1.2.0</version>
+  <description>
+    3D models of the bot1 for simulation and visualization
+  </description>
+  <license>Apache 2.0</license>
+  <maintainer email="l.alhakimghani@gmail.com">Luqman</maintainer>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>urdf</depend>
+  <depend>xacro</depend>
+</package>

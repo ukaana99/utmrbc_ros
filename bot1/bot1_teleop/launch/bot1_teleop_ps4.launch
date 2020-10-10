@@ -1,0 +1,24 @@
+<launch>
+
+ <!-- ds4drv -->
+ <!-- <node name="ds4drv_script_call" pkg="ps4_ros" type="run_ds4drv.sh" output="screen" /> -->
+
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  <param name="model" value="$(arg model)"/>
+
+ <!-- joy node -->
+  <node respawn="true" pkg="joy"
+        type="joy_node" name="bot1_ps4" >
+    <param name="dev" type="string" value="/dev/input/js0" />
+    <param name="deadzone" value="0.12" />
+  </node>
+
+ <!-- ps4 node -->
+    <param name="pub_topic" value="cmd_vel"/>
+    <param name="scale_linear" value="2" type="double"/>
+    <param name="scale_angular" value="0.2" type="double"/>
+  <node pkg="bot1_teleop" type="bot1_teleop_ps4" name="bot1_teleop_ps4" output="screen">
+  </node>
+
+</launch>
+
