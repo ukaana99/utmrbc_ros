@@ -109,6 +109,8 @@ float fFLeftPos, fFRightPos, fBLeftPos, fBRightPos;					 	/* Position, ABT outpu
 float fFLeftVel, fFRightVel, fBLeftVel, fBRightVel;				 		/* Velocity, ABT output */
 float fFLeftAcc, fFRightAcc, fBLeftAcc, fBRightAcc;				 		/* Acceleration, ABT output*/
 float fyaw;
+float fnyaw_prev;
+float fnyaw_delta;
 float fnyaw; 				/* used in main.cpp for angular vel calculation */
 float fyawraw;
 

@@ -15,8 +15,8 @@
 
  <!-- ps4 node -->
     <param name="pub_topic" value="cmd_vel"/>
-    <param name="scale_linear" value="2" type="double"/>
-    <param name="scale_angular" value="0.2" type="double"/>
+    <param name="scale_linear" value="5" type="double"/>
+    <param name="scale_angular" value="2" type="double"/>
   <node pkg="bot1_teleop" type="bot1_teleop_ps4" name="bot1_teleop_ps4" output="screen">
   </node>
 

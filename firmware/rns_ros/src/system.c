@@ -82,7 +82,7 @@ void SYSSystem5ms(void)
 
 	//	fyaw = Read_IMU();
 //	fyaw = (fyaw <= 180.0) ? fyaw : fyaw - 360;
-	fyaw = (fyaw >= 0.0) ? fyaw : 360.0 + fyaw;
+//	fyaw = (fyaw >= 0.0) ? fyaw : 360.0 + fyaw;
 
 	if (sys.activate){
 		//After finish running your task, reset UF.user flag to

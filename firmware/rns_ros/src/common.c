@@ -57,40 +57,40 @@ void wheel_config()
 {
 
 	PIDGainSet(SAT, 1.0, &fleft_vel);
-	PIDGainSet(KE, 1 / 6.8, &fleft_vel);
+	PIDGainSet(KE, 1 / 13.247, &fleft_vel);
 	PIDGainSet(KU, 19999.0, &fleft_vel);
 	//case RNS_F_LEFT_VEL_PID :
-	PIDGainSet(KP, 3.5, &fleft_vel);
-	PIDGainSet(KI, 10.5, &fleft_vel);
+	PIDGainSet(KP, 1.7, &fleft_vel);
+	PIDGainSet(KI, 2.0, &fleft_vel);
 	PIDGainSet(KD, 0.0, &fleft_vel);
 	//case RNS_B_LEFT_VEL_SATEU :
 	PIDGainSet(SAT, 1.0, &bleft_vel);
-	PIDGainSet(KE, 1 / 7.00, &bleft_vel);
+	PIDGainSet(KE, 1 / 14.588, &bleft_vel);
 	PIDGainSet(KU, 19999.0, &bleft_vel);
 	//case RNS_B_LEFT_VEL_PID :
-	PIDGainSet(KP, 4.30, &bleft_vel);
-	PIDGainSet(KI, 9.80, &bleft_vel);
+	PIDGainSet(KP, 2.5, &bleft_vel);
+	PIDGainSet(KI, 2.0, &bleft_vel);
 	PIDGainSet(KD, 0.0, &bleft_vel);
 	//case RNS_F_RIGHT_VEL_SATEU :
 	PIDGainSet(SAT, 1.0, &fright_vel);
-	PIDGainSet(KE, 1 / 6.50, &fright_vel);
+	PIDGainSet(KE, 1 / 13.732, &fright_vel);
 	PIDGainSet(KU, 19999.0, &fright_vel);
 	//case RNS_F_RIGHT_VEL_PID :
-	PIDGainSet(KP, 3.80, &fright_vel);
-	PIDGainSet(KI, 9.0, &fright_vel);
+	PIDGainSet(KP, 2.0, &fright_vel);
+	PIDGainSet(KI, 2.0, &fright_vel);
 	PIDGainSet(KD, 0.0, &fright_vel);
 	//case RNS_B_RIGHT_VEL_SATEU :
 
 	PIDGainSet(SAT, 1.0, &bright_vel);
-	PIDGainSet(KE, 1 / 6.65, &bright_vel);
+	PIDGainSet(KE, 1 / 12.131, &bright_vel);
 	PIDGainSet(KU, 19999.0, &bright_vel);
 
 	//case RNS_B_RIGHT_VEL_PID :
-	PIDGainSet(KP, 3.5, &bright_vel);
-	PIDGainSet(KI, 13.80, &bright_vel);
+	PIDGainSet(KP, 2.4, &bright_vel);
+	PIDGainSet(KI, 2.0, &bright_vel);
 	PIDGainSet(KD, 0.0, &bright_vel);
 
-	dev_cfg.motor_enc_dir = 0b00000101;
+	dev_cfg.motor_enc_dir = 0b10100100;
 	if (dev_cfg.motor1_enc == 0)
 		QEISwap(QEI6, QEI_No_Swap);
 	else
@@ -111,16 +111,16 @@ void wheel_config()
 	else
 		QEISwap(QEI3, QEI_Swap);
 
-	xPtd = 0.05 / 4000.0 * 3.142;
-	yPtd = 0.05 / 4000.0 * 3.142;
+	xPtd = 0.05 / 2000.0 * 3.142;
+	yPtd = 0.05 / 2000.0 * 3.142;
 
 	QEISwap(QEI2, QEI_Swap);
 	QEISwap(QEI5, QEI_No_Swap);
 
-	fFKcd = 517.5 / 516.5;
-	fFPtd = 0.125 * 3.142 / 517.5;
-	fBKcd = 521.1 / 520.7;
-	fBPtd = 0.125 * 3.142 / 521.1;
+	fFKcd = 2442.748 / 2444.161;
+	fFPtd = 0.150 * 3.142 / 244.2748;
+	fBKcd = 2438.506 / 2443.219;
+	fBPtd = 0.150 * 3.142 / 243.8506;
 }
 
 void button(void)

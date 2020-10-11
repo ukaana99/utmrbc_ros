@@ -63,16 +63,12 @@ static uint32_t tTime[10];
 /*******************************************************************************
  * Declaration for RNS
  *******************************************************************************/
-float fprevyaw = 0;
-float fdifyaw = 0;
 float linear_x, linear_y, angular_z;
 
 /*******************************************************************************
  * Declaration for SLAM and navigation
  *******************************************************************************/
 unsigned long prev_update_time;
-float odom_pose[3];
-double odom_vel[3];
 
 /*******************************************************************************
  * Main function
@@ -164,14 +160,14 @@ void ROS_Init()
 
 void ROS_Update()
 {
+	sprintf(buffer, "posX:%f, posY:%f, fyaw:%f, fnyaw:%f, velX:%f, velY:%f, velW(deg):%f, velW(rad):%f", fXPos, fYPos, fyaw, fnyaw, fXVel, fYVel, fWVel, DEG2RAD(fWVel));
+	info_msg.data = buffer;
+	info_pub.publish(&info_msg);
+
 	updateTime();
 	updateTFPrefix();
 	publishDriveInformation();
 	publishImuMsg();
-
-	// sprintf(buffer, "posX:%f, posY:%f, fyaw:%f, fnyaw:%f, velX:%f, velY:%f, velW:%f", fXPos, fYPos, fyaw, fnyaw, fXVel, fYVel, fWVel);
-	// info_msg.data = buffer;
-	// info_pub.publish(&info_msg);
 
 	prev_debug_time = t;
 }
@@ -182,9 +178,9 @@ void ROS_Update()
 void cmdVelCallback(const geometry_msgs::Twist &cmd_vel_msg)
 {
 //	 note that the convention for forward directon in ROS is using x-axis
-	linear_y = constrain(cmd_vel_msg.linear.x, -2.0, 2.0);
-	linear_x = constrain(cmd_vel_msg.linear.y, -2.0, 2.0);
-	angular_z = constrain(cmd_vel_msg.angular.z, -2.0, 2.0);
+	linear_y = constrain(cmd_vel_msg.linear.x, -5.0, 5.0);
+	linear_x = -constrain(cmd_vel_msg.linear.y, -5.0, 5.0);
+	angular_z = constrain(cmd_vel_msg.angular.z, -2.0, 2.0); // rotation
 	MODN(&modn);
 }
 
@@ -196,28 +192,28 @@ void publishImuMsg(void)
 	imu_msg.angular_velocity.x = 0;		//imu.gyroData[0];
 	imu_msg.angular_velocity.y = 0;		//imu.gyroData[1];
 	imu_msg.angular_velocity.z = fWVel; //imu.gyroData[2];
-	// imu_msg.angular_velocity_covariance[0] = 0.02;
-	// imu_msg.angular_velocity_covariance[1] = 0;
-	// imu_msg.angular_velocity_covariance[2] = 0;
-	// imu_msg.angular_velocity_covariance[3] = 0;
-	// imu_msg.angular_velocity_covariance[4] = 0.02;
-	// imu_msg.angular_velocity_covariance[5] = 0;
-	// imu_msg.angular_velocity_covariance[6] = 0;
-	// imu_msg.angular_velocity_covariance[7] = 0;
-	// imu_msg.angular_velocity_covariance[8] = 0.02;
+	 imu_msg.angular_velocity_covariance[0] = 0.02;
+	 imu_msg.angular_velocity_covariance[1] = 0;
+	 imu_msg.angular_velocity_covariance[2] = 0;
+	 imu_msg.angular_velocity_covariance[3] = 0;
+	 imu_msg.angular_velocity_covariance[4] = 0.02;
+	 imu_msg.angular_velocity_covariance[5] = 0;
+	 imu_msg.angular_velocity_covariance[6] = 0;
+	 imu_msg.angular_velocity_covariance[7] = 0;
+	 imu_msg.angular_velocity_covariance[8] = 0.02;
 
 	imu_msg.linear_acceleration.x = fXAcc; //imu.accData[0];
 	imu_msg.linear_acceleration.y = fYAcc; //imu.accData[1];
 	imu_msg.linear_acceleration.z = 0;	   //imu.accData[2];
-	// imu_msg.linear_acceleration_covariance[0] = 0.04;
-	// imu_msg.linear_acceleration_covariance[1] = 0;
-	// imu_msg.linear_acceleration_covariance[2] = 0;
-	// imu_msg.linear_acceleration_covariance[3] = 0;
-	// imu_msg.linear_acceleration_covariance[4] = 0.04;
-	// imu_msg.linear_acceleration_covariance[5] = 0;
-	// imu_msg.linear_acceleration_covariance[6] = 0;
-	// imu_msg.linear_acceleration_covariance[7] = 0;
-	// imu_msg.linear_acceleration_covariance[8] = 0.04;
+	 imu_msg.linear_acceleration_covariance[0] = 0.04;
+	 imu_msg.linear_acceleration_covariance[1] = 0;
+	 imu_msg.linear_acceleration_covariance[2] = 0;
+	 imu_msg.linear_acceleration_covariance[3] = 0;
+	 imu_msg.linear_acceleration_covariance[4] = 0.04;
+	 imu_msg.linear_acceleration_covariance[5] = 0;
+	 imu_msg.linear_acceleration_covariance[6] = 0;
+	 imu_msg.linear_acceleration_covariance[7] = 0;
+	 imu_msg.linear_acceleration_covariance[8] = 0.04;
 
 	//	imu_msg.orientation.w = imu.quat[0]; ??
 	//	imu_msg.orientation.x = imu.quat[1]; ??
@@ -225,15 +221,15 @@ void publishImuMsg(void)
 	//	imu_msg.orientation.z = imu.quat[3]; ??
 	imu_msg.orientation = odom.pose.pose.orientation;
 
-	// imu_msg.orientation_covariance[0] = 0.0025;
-	// imu_msg.orientation_covariance[1] = 0;
-	// imu_msg.orientation_covariance[2] = 0;
-	// imu_msg.orientation_covariance[3] = 0;
-	// imu_msg.orientation_covariance[4] = 0.0025;
-	// imu_msg.orientation_covariance[5] = 0;
-	// imu_msg.orientation_covariance[6] = 0;
-	// imu_msg.orientation_covariance[7] = 0;
-	// imu_msg.orientation_covariance[8] = 0.0025;
+	 imu_msg.orientation_covariance[0] = 0.0025;
+	 imu_msg.orientation_covariance[1] = 0;
+	 imu_msg.orientation_covariance[2] = 0;
+	 imu_msg.orientation_covariance[3] = 0;
+	 imu_msg.orientation_covariance[4] = 0.0025;
+	 imu_msg.orientation_covariance[5] = 0;
+	 imu_msg.orientation_covariance[6] = 0;
+	 imu_msg.orientation_covariance[7] = 0;
+	 imu_msg.orientation_covariance[8] = 0.0025;
 
 	imu_msg.header.stamp = rosNow();
 	imu_msg.header.frame_id = imu_frame_id;
@@ -334,23 +330,18 @@ void updateTFPrefix()
  *******************************************************************************/
 void updateOdometry(void)
 {
-// move to system.c SYSSystem5ms() //////////////////////
-// original fyaw val +-180
+	fnyaw = -(fyaw - 180);
+		fnyaw_delta = fnyaw - fnyaw_prev;
 
-	fdifyaw = fyaw - fprevyaw;
-	if (fdifyaw <= -180.0)
-		fdifyaw = 360.0 + fdifyaw;
-	else if (fdifyaw >= 180.0)
-		fdifyaw = 360.0 - fdifyaw;
-	else
-		fdifyaw = fdifyaw;
+		if (fnyaw_delta <= -180.0)
+			fnyaw_delta = 360.0 + fnyaw_delta;
+		else if (fnyaw_delta >= 180.0)
+			fnyaw_delta  = fnyaw_delta -360.0;
+		else
+			fnyaw_delta  = fnyaw_delta ;
+		fWVel = fnyaw_delta / (1.0 / PUBLISH_FREQUENCY);
 
-	fWVel = DEG2RAD(fdifyaw) / (SAMPLE_TIME * 100);
-	fprevyaw = fyaw;
-
-	fnyaw = fyaw / 360.0;
-
-//////////////////////////////////////////////////////////
+		fnyaw_prev = fnyaw;
 
 	odom.header.frame_id = odom_header_frame_id;
 	odom.child_frame_id = odom_child_frame_id;
@@ -362,7 +353,7 @@ void updateOdometry(void)
 
 	odom.twist.twist.linear.x = fXVel;
 	odom.twist.twist.linear.y = fYVel;
-	odom.twist.twist.angular.z = fWVel;
+	odom.twist.twist.angular.z = DEG2RAD(fWVel);
 }
 
 /*******************************************************************************

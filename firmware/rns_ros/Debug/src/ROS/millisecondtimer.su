@@ -1,3 +1,4 @@
-millisecondtimer.c:16:7:delay	24	static
-millisecondtimer.c:25:11:millis	4	static
-millisecondtimer.c:30:7:reset	4	static
+millisecondtimer.c:16:7:SysTick_Handler	4	static
+millisecondtimer.c:22:7:delay	24	static
+millisecondtimer.c:31:11:millis	4	static
+millisecondtimer.c:36:7:reset	4	static

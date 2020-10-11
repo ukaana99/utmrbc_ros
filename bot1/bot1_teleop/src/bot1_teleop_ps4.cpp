@@ -96,10 +96,10 @@ void Bot1_PS4::PS4Callback(const sensor_msgs::Joy::ConstPtr &ps4)
   this->l2 = ps4->axes[3];
   this->r2 = ps4->axes[4];
 
-  this->leftStickX = -ps4->axes[0];
-  this->leftStickY = ps4->axes[1];
-  this->rightStickX = -ps4->axes[2];
-  this->rightStickY = ps4->axes[5];
+  this->leftStickY = ps4->axes[0];
+  this->leftStickX = ps4->axes[1];
+  this->rightStickY = -ps4->axes[2];
+  this->rightStickX = ps4->axes[5];
   this->leftStickButton = ps4->buttons[10];
   this->rightStickButton = ps4->buttons[11];
 

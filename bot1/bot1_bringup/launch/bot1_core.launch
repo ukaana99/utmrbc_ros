@@ -1,8 +1,14 @@
 <launch>
   <arg name="multi_robot_name" default=""/>
 
-  <node pkg="rosserial_python" type="serial_node.py" name="bot1_core" output="screen">
+  <node pkg="rosserial_python" type="serial_node.py" name="bot1_mb" output="screen">
     <param name="port" value="/dev/ttyUSB0"/>
+    <param name="baud" value="115200"/>
+    <!-- <param name="tf_prefix" value="$(arg multi_robot_name)"/> -->
+  </node>
+
+  <node pkg="rosserial_python" type="serial_node.py" name="bot1_rns" output="screen">
+    <param name="port" value="/dev/ttyUSB1"/>
     <param name="baud" value="115200"/>
     <param name="tf_prefix" value="$(arg multi_robot_name)"/>
   </node>

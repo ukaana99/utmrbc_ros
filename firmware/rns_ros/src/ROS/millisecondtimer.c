@@ -13,6 +13,12 @@ extern "C"
 	//	SysTick_Config(SystemCoreClock / 1000);
 	//}
 
+	void SysTick_Handler(void)
+	{
+		_counter++;
+	}
+
+
 	void delay(uint32_t millis)
 	{
 		uint32_t target;

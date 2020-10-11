@@ -1,4 +1,3 @@
-interrupt.c:7:6:SysTick_Handler	4	static
 interrupt.c:11:6:TIM1_UP_TIM10_IRQHandler	8	static
 interrupt.c:24:6:TIM2_IRQHandler	8	static
 interrupt.c:38:6:TIM3_IRQHandler	8	static

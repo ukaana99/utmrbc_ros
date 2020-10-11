@@ -7,6 +7,7 @@ float fBLeftPosGain[3] = {0.8, 0.4, 0.2};
 float fBRightPosGain[3] = {0.8, 0.4, 0.2};
 float fXPosGain[3] = {0.8, 0.4, 0.2};
 float fYPosGain[3] = {0.8, 0.4, 0.2};
+float fYawGain[3] = {0.8, 0.4, 0.2};
 
 /* U_MAX,E_MAX,EC_MAX,ES_MAX,KP_B,KI_B,KD_B,KP_P,KI_P,KD_P */
 float fFuzFLeftVG[10] = {19999.0, 3.0, 1.5, 6.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
