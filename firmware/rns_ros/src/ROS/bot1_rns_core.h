@@ -28,6 +28,7 @@
 
 #define DEG2RAD(x) (x * 0.01745329252) // *PI/180
 #define RAD2DEG(x) (x * 57.2957795131) // *180/PI
+#define RAD2REV(x) (x * 0.16) // rads to rotations
 
 #define PUBLISH_FREQUENCY 20
 #define FIRMWARE_VER "1.0.0"

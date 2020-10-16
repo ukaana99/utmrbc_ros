@@ -119,17 +119,12 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         kinect_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wheel_fl_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wheel_fr_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -144,8 +139,18 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        wheel_fl_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheel_fr_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
       Name: RobotModel
-      Robot Description: robot_description_dev
+      Robot Description: robot_description
       TF Prefix: ""
       Update Interval: 0
       Value: true
@@ -163,17 +168,19 @@ Visualization Manager:
           Value: true
         camera_link:
           Value: true
+        imu_link:
+          Value: true
         kinect_link:
           Value: true
-        wheel_fl_link:
-          Value: true
-        wheel_fr_link:
+        odom:
           Value: true
         wheel_bl_link:
           Value: true
         wheel_br_link:
           Value: true
-        odom:
+        wheel_fl_link:
+          Value: true
+        wheel_fr_link:
           Value: true
       Marker Scale: 0.4000000059604645
       Name: TF
@@ -183,21 +190,23 @@ Visualization Manager:
       Tree:
         odom:
           base_footprint:
-            base_link:
-              base_scan:
-                {}
-              camera_link:
-                {}
-              kinect_link:
-                {}
-              wheel_fl_link:
-                {}
-              wheel_fr_link:
-                {}
-              wheel_bl_link:
-                {}
-              wheel_br_link:
-                {}
+            {}
+          base_link:
+            {}
+          base_scan:
+            {}
+          camera_link:
+            {}
+          kinect_link:
+            {}
+          wheel_bl_link:
+            {}
+          wheel_br_link:
+            {}
+          wheel_fl_link:
+            {}
+          wheel_fr_link:
+            {}
       Update Interval: 0
       Value: true
   Enabled: true

@@ -108,11 +108,11 @@ float fFLeftPosData, fFRightPosData, fBLeftPosData, fBRightPosData; 	/* Raw data
 float fFLeftPos, fFRightPos, fBLeftPos, fBRightPos;					 	/* Position, ABT output, pos PID feedback */
 float fFLeftVel, fFRightVel, fBLeftVel, fBRightVel;				 		/* Velocity, ABT output */
 float fFLeftAcc, fFRightAcc, fBLeftAcc, fBRightAcc;				 		/* Acceleration, ABT output*/
+float fyawraw;
 float fyaw;
 float fnyaw_prev;
 float fnyaw_delta;
 float fnyaw; 				/* used in main.cpp for angular vel calculation */
-float fyawraw;
 
 float fXEncData, fYEncData;
 float fXPos, fYPos;			/* Position, ABT output, pos PID feedback */

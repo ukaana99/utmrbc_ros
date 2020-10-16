@@ -1,8 +1,8 @@
 <launch>
-  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="model" default="bot1"/>
   <arg name="multi_robot_name" default=""/>
 
-  <include file="$(find bot1_bringup)/launch/includes/description.launch.xml">
+  <include file="$(find bot1_bringup)/launch/includes/description_dev.launch.xml">
     <arg name="model" value="$(arg model)" />
   </include>
 

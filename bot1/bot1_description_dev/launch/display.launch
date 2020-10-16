@@ -22,5 +22,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find bot1_description_dev)/urdf.rviz" />
+    args="-d $(find bot1_description_dev)/rviz/model.rviz" />
 </launch>

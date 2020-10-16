@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="bot1_description_dev" xmlns:xacro="http://ros.org/wiki/xacro">
+  
+  <link name="base_footprint"/>
+
+  <gazebo reference="base_footprint">
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+
+  <joint
+    name="base_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_footprint" />
+    <child
+      link="base_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.016085 0.0025248 0.26599"
+        rpy="0 0 0" />
+      <mass
+        value="15.998" />
+      <inertia
+        ixx="0.10237"
+        ixy="-4.9455E-05"
+        ixz="-0.00071747"
+        iyy="0.073183"
+        iyz="-2.5703E-05"
+        izz="0.16242" />
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/White</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  
+  <joint
+    name="scan_joint"
+    type="fixed">
+    <origin
+      xyz="0.40414 0 0.0701"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="base_scan" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <link
+    name="base_scan">
+    <inertial>
+      <origin
+        xyz="-0.00748346988333626 0.0106681277328402 9.19261110875926E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.33076913637071" />
+      <inertia
+        ixx="0.00061491794045409"
+        ixy="0.00015824302591117"
+        ixz="8.01984318975051E-07"
+        iyy="0.00109815200027136"
+        iyz="3.09162986587581E-06"
+        izz="0.000960697335617222" />
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/base_scan.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/base_scan.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0.15402 0.0034297 0.45835"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="0.00343288650659885 0.00161390844706877 -0.0158138637103199"
+        rpy="0 0 0" />
+      <mass
+        value="0.0441644560541813" />
+      <inertia
+        ixx="1.69621154428033E-05"
+        ixy="2.79192684633465E-09"
+        ixz="1.02029287390196E-09"
+        iyy="1.13320443263928E-05"
+        iyz="9.10571406560525E-07"
+        izz="1.11443700572777E-05" />
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="imu_joint"
+    type="fixed">
+    <origin
+      xyz="-0.052 0.098 0.168"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="imu_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <link
+    name="imu_link">
+    <inertial>
+      <origin
+        xyz="0.167234199640335 0.13448364588244 -0.121334199640337"
+        rpy="0 0 0" />
+      <mass
+        value="0.0007817846555206" />
+      <inertia
+        ixx="2.57155472447277E-08"
+        ixy="2.87840031983055E-25"
+        ixz="-1.0450829272368E-23"
+        iyy="5.09203061902391E-08"
+        iyz="4.33789435752085E-25"
+        izz="2.57155472447277E-08" />
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/imu_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/imu_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="kinect_joint"
+    type="fixed">
+    <origin
+      xyz="0.17504 0 0.39"
+      rpy="1.6326 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="kinect_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  
+  <link
+    name="kinect_link">
+    <inertial>
+      <origin
+        xyz="4.65715076470629E-05 -0.0102105260165417 -0.0285186924484645"
+        rpy="0 0 0" />
+      <mass
+        value="0.658662539657539" />
+      <inertia
+        ixx="0.000269654820214063"
+        ixy="-1.01336025038874E-07"
+        ixz="-9.31154703094206E-07"
+        iyy="0.00311018490924289"
+        iyz="-1.33750578578682E-05"
+        izz="0.00298758188353636" />
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/kinect_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.494117647058824 0.494117647058824 0.494117647058824 1" />
+      </material>
+    </visual>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/kinect_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="wheel_bl_joint"
+    type="fixed">
+    <origin
+      xyz="-0.26302 0.26302 0.0755"
+      rpy="-1.5708 -0.37436 -2.3562" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_bl_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit effort="100" velocity="100"/>
+    <joint_properties damping="0.0" friction="0.0"/>
+  </joint>
+
+  <transmission name="wheel_bl_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_bl_joint"/>
+    <actuator name="wheel_bl_joint_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  
+  <link
+    name="wheel_bl_link">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 -1.38777878078145E-17 0.0193695052101009"
+        rpy="0 0 0" />
+      <mass
+        value="0.688491418307572" />
+      <inertia
+        ixx="0.00106926437465913"
+        ixy="4.06575814682064E-20"
+        ixz="1.35525271560688E-18"
+        iyy="0.00106926437465913"
+        iyz="-8.94466792300541E-19"
+        izz="0.00196525349307539" />
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/wheel_bl_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/wheel_bl_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="wheel_bl_link">
+    <mu1 value="1.0"/>
+    <mu2 value="1.0"/>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
+    <fdir1 value="1 0 0"/>
+    <material>Gazebo/Grey</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  
+  <joint
+    name="wheel_br_joint"
+    type="fixed">
+    <origin
+      xyz="-0.26302 -0.26302 0.0755"
+      rpy="-1.5708 -0.37436 -0.7854" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_br_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit effort="100" velocity="100"/>
+    <joint_properties damping="0.0" friction="0.0"/>
+  </joint>
+
+  <transmission name="wheel_br_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_br_joint"/>
+    <actuator name="wheel_br_joint_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  
+  <link
+    name="wheel_br_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/wheel_br_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/wheel_br_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="wheel_br_link">
+    <mu1 value="1.0"/>
+    <mu2 value="1.0"/>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
+    <fdir1 value="1 0 0"/>
+    <material>Gazebo/Grey</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  
+  <joint
+    name="wheel_fl_joint"
+    type="fixed">
+    <origin
+      xyz="0.26302 0.26302 0.0755"
+      rpy="-1.5708 -0.37436 2.3562" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_fl_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit effort="100" velocity="100"/>
+    <joint_properties damping="0.0" friction="0.0"/>
+  </joint>
+
+  <transmission name="wheel_fl_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_fl_joint"/>
+    <actuator name="wheel_fl_joint_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  
+  <link
+    name="wheel_fl_link">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 -1.38777878078145E-17 0.0193695052101009"
+        rpy="0 0 0" />
+      <mass
+        value="0.688491418307572" />
+      <inertia
+        ixx="0.00106926437465913"
+        ixy="-5.42101086242752E-20"
+        ixz="-8.13151629364128E-19"
+        iyy="0.00106926437465913"
+        iyz="1.02999206386123E-18"
+        izz="0.00196525349307539" />
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/wheel_fl_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/wheel_fl_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="wheel_fl_link">
+    <mu1 value="1.0"/>
+    <mu2 value="1.0"/>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
+    <fdir1 value="1 0 0"/>
+    <material>Gazebo/Grey</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+  
+  <joint
+    name="wheel_fr_joint"
+    type="fixed">
+    <origin
+      xyz="0.26302 -0.26302 0.0755"
+      rpy="-1.5708 -0.37436 0.7854" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_fr_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit effort="100" velocity="100"/>
+    <joint_properties damping="0.0" friction="0.0"/>
+  </joint>
+
+  <transmission name="wheel_fr_joint_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_fr_joint"/>
+    <actuator name="wheel_fr_joint_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  
+  <link
+    name="wheel_fr_link">
+    <inertial>
+      <origin
+        xyz="8.32667268468867E-17 -1.38777878078145E-17 0.0193695052101009"
+        rpy="0 0 0" />
+      <mass
+        value="0.688491418307572" />
+      <inertia
+        ixx="0.00106926437465913"
+        ixy="-5.42101086242752E-20"
+        ixz="1.0842021724855E-18"
+        iyy="0.00106926437465913"
+        iyz="-8.53809210832335E-19"
+        izz="0.00196525349307539" />
+    </inertial>
+
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/wheel_fr_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bot1_description_dev/meshes/wheel_fr_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="wheel_fr_link">
+    <mu1 value="1.0"/>
+    <mu2 value="1.0"/>
+    <kp value="10000000.0"/>
+    <kd value="1.0"/>
+    <fdir1 value="1 0 0"/>
+    <material>Gazebo/Grey</material>
+    <turnGravityOff>false</turnGravityOff>
+  </gazebo>
+</robot>

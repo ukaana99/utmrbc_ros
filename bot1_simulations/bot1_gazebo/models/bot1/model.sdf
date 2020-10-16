@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <sdf version='1.6'>
   <model name='bot1'>
     <link name='base_footprint'>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose frame=''>0.47917 -0.577441 0.611906 0 -0 0</pose>
-        <mass>17.9979</mass>
+        <pose frame=''>0.052732 0.010555 0.238396 0 -0 0</pose>
+        <mass>20.0979</mass>
         <inertia>
-          <ixx>0.317432</ixx>
-          <ixy>-0.00134167</ixy>
-          <ixz>-0.00041779</ixz>
-          <iyy>0.161026</iyy>
-          <iyz>-0.0776868</iyz>
-          <izz>0.354606</izz>
+          <ixx>0.352844</ixx>
+          <ixy>0.0528596</ixy>
+          <ixz>0.0881464</ixz>
+          <iyy>0.496089</iyy>
+          <iyz>0.0267841</iyz>
+          <izz>0.597237</izz>
         </inertia>
       </inertial>
       <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
@@ -25,7 +25,7 @@
         </geometry>
       </collision>
       <collision name='base_footprint_fixed_joint_lump__camera_link_collision_1'>
-        <pose frame=''>0.480361 -0.68522 0.812858 -3.14159 -0 3.14159</pose>
+        <pose frame=''>0.15402 0.00343 0.45835 -3.14159 0 -1.5708</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -33,8 +33,17 @@
           </mesh>
         </geometry>
       </collision>
-      <collision name='base_footprint_fixed_joint_lump__kinect_link_collision_2'>
-        <pose frame=''>0.476932 -0.703241 0.744512 1.50899 -0 0</pose>
+      <collision name='base_footprint_fixed_joint_lump__imu_link_collision_2'>
+        <pose frame=''>-0.052 0.098 0.168 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bot1/meshes/imu_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__kinect_link_collision_3'>
+        <pose frame=''>0.17504 0 0.39 1.6326 -0 1.5708</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -42,12 +51,48 @@
           </mesh>
         </geometry>
       </collision>
-      <collision name='base_footprint_fixed_joint_lump__base_scan_collision_3'>
-        <pose frame=''>0.476931 -0.935335 0.42461 -1.5708 -0 -1.5708</pose>
+      <collision name='base_footprint_fixed_joint_lump__base_scan_collision_4'>
+        <pose frame=''>0.40414 0 0.0701 1.5708 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
             <uri>model://bot1/meshes/base_scan.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__wheel_bl_link_collision_5'>
+        <pose frame=''>-0.26302 0.26302 0.0755 -1.5708 -0.37436 -2.3562</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bot1/meshes/wheel_bl_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__wheel_br_link_collision_6'>
+        <pose frame=''>-0.26302 -0.26302 0.0755 -1.5708 -0.37436 -0.7854</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bot1/meshes/wheel_br_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__wheel_fl_link_collision_7'>
+        <pose frame=''>0.26302 0.26302 0.0755 -1.5708 -0.37436 2.3562</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bot1/meshes/wheel_fl_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__wheel_fr_link_collision_8'>
+        <pose frame=''>0.26302 -0.26302 0.0755 -1.5708 -0.37436 0.7854</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bot1/meshes/wheel_fr_link.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -61,7 +106,7 @@
         </geometry>
       </visual>
       <visual name='base_footprint_fixed_joint_lump__camera_link_visual_1'>
-        <pose frame=''>0.480361 -0.68522 0.812858 -3.14159 -0 3.14159</pose>
+        <pose frame=''>0.15402 0.00343 0.45835 -3.14159 0 -1.5708</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -69,8 +114,17 @@
           </mesh>
         </geometry>
       </visual>
-      <visual name='base_footprint_fixed_joint_lump__kinect_link_visual_2'>
-        <pose frame=''>0.476932 -0.703241 0.744512 1.50899 -0 0</pose>
+      <visual name='base_footprint_fixed_joint_lump__imu_link_visual_2'>
+        <pose frame=''>-0.052 0.098 0.168 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bot1/meshes/imu_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__kinect_link_visual_3'>
+        <pose frame=''>0.17504 0 0.39 1.6326 -0 1.5708</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -78,8 +132,8 @@
           </mesh>
         </geometry>
       </visual>
-      <visual name='base_footprint_fixed_joint_lump__base_scan_visual_3'>
-        <pose frame=''>0.476931 -0.935335 0.42461 -1.5708 -0 -1.5708</pose>
+      <visual name='base_footprint_fixed_joint_lump__base_scan_visual_4'>
+        <pose frame=''>0.40414 0 0.0701 1.5708 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -87,32 +141,8 @@
           </mesh>
         </geometry>
       </visual>
-    </link>
-    <link name='wheel_bl_link'>
-      <pose frame=''>0.739955 -0.268171 0.43001 -1.5708 -0.374361 2.35619</pose>
-      <inertial>
-        <pose frame=''>0 -0 0.01937 0 -0 0</pose>
-        <mass>0.688491</mass>
-        <inertia>
-          <ixx>0.00106926</ixx>
-          <ixy>-2.71051e-20</ixy>
-          <ixz>4.33681e-18</ixz>
-          <iyy>0.00106926</iyy>
-          <iyz>-1.65341e-18</iyz>
-          <izz>0.00196525</izz>
-        </inertia>
-      </inertial>
-      <collision name='wheel_bl_link_collision'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://bot1/meshes/wheel_bl_link.STL</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name='wheel_bl_link_visual'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+      <visual name='base_footprint_fixed_joint_lump__wheel_bl_link_visual_5'>
+        <pose frame=''>-0.26302 0.26302 0.0755 -1.5708 -0.37436 -2.3562</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -120,48 +150,8 @@
           </mesh>
         </geometry>
       </visual>
-    </link>
-    <joint name='whee_bl_joint' type='revolute'>
-      <child>wheel_bl_link</child>
-      <parent>base_footprint</parent>
-      <axis>
-        <xyz>0 0 0</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <link name='wheel_br_link'>
-      <pose frame=''>0.213907 -0.268171 0.43001 -1.5708 -0.374361 -2.35619</pose>
-      <inertial>
-        <pose frame=''>0 -0 0.01937 0 -0 0</pose>
-        <mass>0.688491</mass>
-        <inertia>
-          <ixx>0.00106926</ixx>
-          <ixy>2.71051e-20</ixy>
-          <ixz>-1.0842e-18</ixz>
-          <iyy>0.00106926</iyy>
-          <iyz>1.65341e-18</iyz>
-          <izz>0.00196525</izz>
-        </inertia>
-      </inertial>
-      <collision name='wheel_br_link_collision'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://bot1/meshes/wheel_br_link.STL</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name='wheel_br_link_visual'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+      <visual name='base_footprint_fixed_joint_lump__wheel_br_link_visual_6'>
+        <pose frame=''>-0.26302 -0.26302 0.0755 -1.5708 -0.37436 -0.7854</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -169,48 +159,8 @@
           </mesh>
         </geometry>
       </visual>
-    </link>
-    <joint name='wheel_br_joint' type='revolute'>
-      <child>wheel_br_link</child>
-      <parent>base_footprint</parent>
-      <axis>
-        <xyz>0 0 0</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <link name='wheel_fl_link'>
-      <pose frame=''>0.739955 -0.79422 0.43001 -1.5708 -0.374361 0.785398</pose>
-      <inertial>
-        <pose frame=''>-0 -0 0.01937 0 -0 0</pose>
-        <mass>0.688491</mass>
-        <inertia>
-          <ixx>0.00106926</ixx>
-          <ixy>-2.71051e-20</ixy>
-          <ixz>-4.39102e-18</ixz>
-          <iyy>0.00106926</iyy>
-          <iyz>-1.78893e-18</iyz>
-          <izz>0.00196525</izz>
-        </inertia>
-      </inertial>
-      <collision name='wheel_fl_link_collision'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://bot1/meshes/wheel_fl_link.STL</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name='wheel_fl_link_visual'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+      <visual name='base_footprint_fixed_joint_lump__wheel_fl_link_visual_7'>
+        <pose frame=''>0.26302 0.26302 0.0755 -1.5708 -0.37436 2.3562</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -218,48 +168,8 @@
           </mesh>
         </geometry>
       </visual>
-    </link>
-    <joint name='wheel_fl_joint' type='revolute'>
-      <child>wheel_fl_link</child>
-      <parent>base_footprint</parent>
-      <axis>
-        <xyz>0 0 0</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <link name='wheel_fr_link'>
-      <pose frame=''>0.213907 -0.79422 0.43001 -1.5708 -0.374361 -0.785398</pose>
-      <inertial>
-        <pose frame=''>0 0 0.01937 0 -0 0</pose>
-        <mass>0.688491</mass>
-        <inertia>
-          <ixx>0.00106926</ixx>
-          <ixy>9.48677e-20</ixy>
-          <ixz>1.30104e-18</ixz>
-          <iyy>0.00106926</iyy>
-          <iyz>1.77538e-18</iyz>
-          <izz>0.00196525</izz>
-        </inertia>
-      </inertial>
-      <collision name='wheel_fr_link_collision'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://bot1/meshes/wheel_fr_link.STL</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <visual name='wheel_fr_link_visual'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+      <visual name='base_footprint_fixed_joint_lump__wheel_fr_link_visual_8'>
+        <pose frame=''>0.26302 -0.26302 0.0755 -1.5708 -0.37436 0.7854</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -268,21 +178,5 @@
         </geometry>
       </visual>
     </link>
-    <joint name='wheel_fr_joint' type='revolute'>
-      <child>wheel_fr_link</child>
-      <parent>base_footprint</parent>
-      <axis>
-        <xyz>0 0 0</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
   </model>
 </sdf>

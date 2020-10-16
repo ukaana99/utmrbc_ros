@@ -23,6 +23,8 @@ char *get_tf_prefix = get_prefix;
 char odom_header_frame_id[30];
 char odom_child_frame_id[30];
 
+char kinect_frame_id[30];
+char camera_frame_id[30];
 char imu_frame_id[30];
 char mag_frame_id[30];
 
@@ -80,7 +82,7 @@ int main(void)
 	BIOSTIMx_Init(TIM7, 1000, 84, 2, 0); //1ms
 	BIOSTIMx_Init(TIM6, 5000, 84, 2, 0); //10ms
 	MODNRobotBaseInit(MODN_FWD_OMNI, 2.0, 0.0, &modn);
-	MODNRobotVelInit(&linear_x, &linear_y, &angular_z, &modn);
+	MODNRobotVelInit(&linear_y, &linear_x, &angular_z, &modn);
 	MODNWheelVelInit(&vel1, &vel2, &vel3, &vel4, &modn);
 
 	main_board_1_data_receive.common_instruction = RNS_PENDING;
@@ -178,9 +180,9 @@ void ROS_Update()
 void cmdVelCallback(const geometry_msgs::Twist &cmd_vel_msg)
 {
 //	 note that the convention for forward directon in ROS is using x-axis
-	linear_y = constrain(cmd_vel_msg.linear.x, -5.0, 5.0);
-	linear_x = -constrain(cmd_vel_msg.linear.y, -5.0, 5.0);
-	angular_z = constrain(cmd_vel_msg.angular.z, -2.0, 2.0); // rotation
+	linear_x = constrain(cmd_vel_msg.linear.x, -5.0, 5.0);
+	linear_y = -constrain(cmd_vel_msg.linear.y, -5.0, 5.0);
+	angular_z = constrain(RAD2REV(cmd_vel_msg.angular.z), -1.0, 1.0); // rotation
 	MODN(&modn);
 }
 
@@ -189,47 +191,13 @@ void cmdVelCallback(const geometry_msgs::Twist &cmd_vel_msg)
 *******************************************************************************/
 void publishImuMsg(void)
 {
-	imu_msg.angular_velocity.x = 0;		//imu.gyroData[0];
-	imu_msg.angular_velocity.y = 0;		//imu.gyroData[1];
-	imu_msg.angular_velocity.z = fWVel; //imu.gyroData[2];
-	 imu_msg.angular_velocity_covariance[0] = 0.02;
-	 imu_msg.angular_velocity_covariance[1] = 0;
-	 imu_msg.angular_velocity_covariance[2] = 0;
-	 imu_msg.angular_velocity_covariance[3] = 0;
-	 imu_msg.angular_velocity_covariance[4] = 0.02;
-	 imu_msg.angular_velocity_covariance[5] = 0;
-	 imu_msg.angular_velocity_covariance[6] = 0;
-	 imu_msg.angular_velocity_covariance[7] = 0;
-	 imu_msg.angular_velocity_covariance[8] = 0.02;
-
-	imu_msg.linear_acceleration.x = fXAcc; //imu.accData[0];
-	imu_msg.linear_acceleration.y = fYAcc; //imu.accData[1];
-	imu_msg.linear_acceleration.z = 0;	   //imu.accData[2];
-	 imu_msg.linear_acceleration_covariance[0] = 0.04;
-	 imu_msg.linear_acceleration_covariance[1] = 0;
-	 imu_msg.linear_acceleration_covariance[2] = 0;
-	 imu_msg.linear_acceleration_covariance[3] = 0;
-	 imu_msg.linear_acceleration_covariance[4] = 0.04;
-	 imu_msg.linear_acceleration_covariance[5] = 0;
-	 imu_msg.linear_acceleration_covariance[6] = 0;
-	 imu_msg.linear_acceleration_covariance[7] = 0;
-	 imu_msg.linear_acceleration_covariance[8] = 0.04;
-
-	//	imu_msg.orientation.w = imu.quat[0]; ??
-	//	imu_msg.orientation.x = imu.quat[1]; ??
-	//	imu_msg.orientation.y = imu.quat[2]; ??
-	//	imu_msg.orientation.z = imu.quat[3]; ??
+	imu_msg.angular_velocity.x = 0;
+	imu_msg.angular_velocity.y = 0;
+	imu_msg.angular_velocity.z = DEG2RAD(fWVel);
+	imu_msg.linear_acceleration.x = fXAcc;
+	imu_msg.linear_acceleration.y = fYAcc;
+	imu_msg.linear_acceleration.z = 0;
 	imu_msg.orientation = odom.pose.pose.orientation;
-
-	 imu_msg.orientation_covariance[0] = 0.0025;
-	 imu_msg.orientation_covariance[1] = 0;
-	 imu_msg.orientation_covariance[2] = 0;
-	 imu_msg.orientation_covariance[3] = 0;
-	 imu_msg.orientation_covariance[4] = 0.0025;
-	 imu_msg.orientation_covariance[5] = 0;
-	 imu_msg.orientation_covariance[6] = 0;
-	 imu_msg.orientation_covariance[7] = 0;
-	 imu_msg.orientation_covariance[8] = 0.0025;
 
 	imu_msg.header.stamp = rosNow();
 	imu_msg.header.frame_id = imu_frame_id;
@@ -283,6 +251,8 @@ void updateTFPrefix()
 			sprintf(odom_header_frame_id, "odom");
 			sprintf(odom_child_frame_id, "base_footprint");
 
+			sprintf(kinect_frame_id, "kinect_link");
+			sprintf(camera_frame_id, "camera_link");
 			sprintf(imu_frame_id, "imu_link");
 			sprintf(mag_frame_id, "mag_link");
 			sprintf(joint_state_header_frame_id, "base_link");
@@ -292,6 +262,8 @@ void updateTFPrefix()
 			strcpy(odom_header_frame_id, get_tf_prefix);
 			strcpy(odom_child_frame_id, get_tf_prefix);
 
+			strcpy(kinect_frame_id, get_tf_prefix);
+			strcpy(camera_frame_id, get_tf_prefix);
 			strcpy(imu_frame_id, get_tf_prefix);
 			strcpy(mag_frame_id, get_tf_prefix);
 			strcpy(joint_state_header_frame_id, get_tf_prefix);
@@ -299,12 +271,20 @@ void updateTFPrefix()
 			strcat(odom_header_frame_id, "/odom");
 			strcat(odom_child_frame_id, "/base_footprint");
 
+			strcat(kinect_frame_id, "/kinect_link");
+			strcat(camera_frame_id, "/camera_link");
 			strcat(imu_frame_id, "/imu_link");
 			strcat(mag_frame_id, "/mag_link");
 			strcat(joint_state_header_frame_id, "/base_link");
 		}
 
 		sprintf(log_msg, "Setup TF on Odometry [%s]", odom_header_frame_id);
+		nh.loginfo(log_msg);
+
+		sprintf(log_msg, "Setup TF on Kinect [%s]", kinect_frame_id);
+		nh.loginfo(log_msg);
+
+		sprintf(log_msg, "Setup TF on Camera [%s]", camera_frame_id);
 		nh.loginfo(log_msg);
 
 		sprintf(log_msg, "Setup TF on IMU [%s]", imu_frame_id);
