@@ -21649,7 +21649,7 @@ void cmdVelCallback(const geometry_msgs::Twist &cmd_vel_msg)
  8009fc2:	eef1 7a67 	vneg.f32	s15, s15
  8009fc6:	4b2d      	ldr	r3, [pc, #180]	; (800a07c <_Z14cmdVelCallbackRKN13geometry_msgs5TwistE+0x134>)
  8009fc8:	edc3 7a00 	vstr	s15, [r3]
-	angular_z = constrain(RAD2ROT(cmd_vel_msg.angular.z), -1.0, 1.0); // rotation
+	angular_z = constrain(RAD2REV(cmd_vel_msg.angular.z), -1.0, 1.0); // rotation
  8009fcc:	687b      	ldr	r3, [r7, #4]
  8009fce:	6a1b      	ldr	r3, [r3, #32]
  8009fd0:	4618      	mov	r0, r3
